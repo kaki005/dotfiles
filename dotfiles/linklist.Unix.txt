@@ -4,7 +4,11 @@ vim/.vimrc              ${HOME}/.vimrc
 # zsh
 zsh/.zshrc		${HOME}/.zshrc
 
+# git
+git/.gitconfig		${HOME}/.gitconfig
 
+# screen
+screen/.screenrc 	${HOME}/.screenrc
 
 # bashsh
 bash/.bashrc		${HOME}/.bashrc
