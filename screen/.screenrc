@@ -1,0 +1,17 @@
+# encoding
+defutf8 on
+defencoding utf8
+encoding utf8 utf8
+
+# message off
+startup_message off
+vbell off
+
+## スクロール行数
+defscrollback 10000
+
+## マウススクロール有効
+termcapinfo xterm* ti@:te@
+
+# Status Line
+hardstatus alwayslastline "%{= cd} %-w%{= wk} %n %t* %{-}%+w"
