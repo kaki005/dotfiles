@@ -2,9 +2,17 @@
 
 dotfiles_root=$(cd $(dirname $0)/.. && pwd)
 
-# dotfilesディレクトリの中身のリンクをホームディレクトリ直下に作成
 cd ${dotfiles_root}/dotfiles
-for file in .*; do
-    ln -s ${PWD}/${file} ${HOME}
+for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
+    [ ! -r "${linklist}" ] && continue
+
+    __remove_linklist_comment "$linklist" | while read target link; do
+        # ~ や環境変数を展開
+        target=$(eval echo "${PWD}/${target}")
+        link=$(eval echo "${link}")
+        # シンボリックリンクを作成
+        mkdir -p $(dirname ${link})
+        ln -fsn ${target} ${link}
+    done
 done
 
