@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -68,5 +75,6 @@ zinit light-mode for \
 
 SCRIPT_DIR=$HOME/dotfiles/dotfiles
 
-source $SCRIPT_DIR/zsh/plugins.zsh
+source $SCRIPT_DIR/zsh/plugin.zsh
 source $SCRIPT_DIR/zsh/config.zsh
+source $SCRIPT_DIR/zsh/p10k.zsh
