@@ -8,7 +8,7 @@ zinit light sharkdp/bat
 # 以下はただのエイリアス設定
 if builtin command -v bat > /dev/null; then
   alias cat="bat"
-fii
+fi
 
 # exa
 zinit ice as"program" from"gh-r" mv"eza* -> eza"
