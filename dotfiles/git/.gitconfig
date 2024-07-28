@@ -2,4 +2,4 @@
 	email = u097498f@ecs.osaka-u.ac.jp
 	name = kaki005
 [commit]
-	tamplate = /Users/skakio/Desktop/Git/commit_temp/.commit_template
+	tamplate = $HOME/dotfiles/dotfiles/git/.commit_template

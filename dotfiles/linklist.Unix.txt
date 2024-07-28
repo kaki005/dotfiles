@@ -1,0 +1,10 @@
+# vim
+vim/.vim                ${HOME}/.vim
+
+# zsh
+zsh/.zshrc		${HOME}/.zshrc
+
+
+
+# bashsh
+bash/.bashrc		${HOME}/.bashrc
