@@ -11,4 +11,6 @@ if builtin command -v bat > /dev/null; then
   alias cat="bat"
 fi
 
+zinit light sharkdp/fd
+zinit light wting/autojump
 

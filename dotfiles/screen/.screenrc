@@ -14,5 +14,12 @@ defscrollback 10000
 termcapinfo xterm* ti@:te@
 
 # Status Line
-hardstatus on
-hardstatus alwayslastline "%{= cd} %-w%{= wk} %n %t* %{-}%+w"
+#画面左下のバーの色をローカルとssh先で切り替える
+#緑
+hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s] %{gk} %-w%{= GK}%n %t%{-}%+w %=%{gk}%l"
+#青
+#hardstatus alwayslastline "%{= ck}[%m/%d %02c:%s] %{ck} %-w%{= CK}%n %t%{-}%+w %=%{ck}%l"
+#黄色
+#hardstatus alwayslastline "%{= yk}[%m/%d %02c:%s] %{yk} %-w%{= YK}%n %t%{-}%+w %=%{yk}%l"
+hardstatus off
+
