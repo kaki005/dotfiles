@@ -1,1 +1,0 @@
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
