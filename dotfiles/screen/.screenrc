@@ -14,4 +14,5 @@ defscrollback 10000
 termcapinfo xterm* ti@:te@
 
 # Status Line
+hardstatus on
 hardstatus alwayslastline "%{= cd} %-w%{= wk} %n %t* %{-}%+w"
