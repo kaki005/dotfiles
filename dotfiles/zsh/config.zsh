@@ -1,3 +1,4 @@
+export LANG=ja_JP.UTF-8
 setopt share_history           # 履歴を他のシェルとリアルタイム共有する
 setopt hist_ignore_all_dups    # 同じコマンドをhistoryに残さない
 setopt hist_ignore_space       # historyに保存するときに余分なスペースを削除する
