@@ -74,6 +74,7 @@ zinit light-mode for \
 
 
 SCRIPT_DIR=$HOME/dotfiles/dotfiles/zsh
+export PATH=$SCRIPT_DIR/command:$PATH
 
 source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/config.zsh
