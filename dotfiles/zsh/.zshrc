@@ -73,14 +73,14 @@ zinit light-mode for \
 
 
 
-SCRIPT_DIR=$HOME/dotfiles/dotfiles
+SCRIPT_DIR=$HOME/dotfiles/dotfiles/zsh
 
-source $SCRIPT_DIR/zsh/plugin.zsh
-source $SCRIPT_DIR/zsh/config.zsh
-source $SCRIPT_DIR/zsh/p10k.zsh
-source $SCRIPT_DIR/zsh/git-prompt.sh  # git-promptの読み込み
+source $SCRIPT_DIR/plugin.zsh
+source $SCRIPT_DIR/config.zsh
+source $SCRIPT_DIR/tool/p10k.zsh
+source $SCRIPT_DIR/tool/git-prompt.sh  # git-promptの読み込み
 fpath=(~/zsh $fpath)
-zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/zsh/git-completion.bash # git-completionの読み込み
+zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
 autoload -Uz compinit && compinit
 # プロンプトのオプション表示設定
 GIT_PS1_SHOWDIRTYSTATE=true
