@@ -22,3 +22,6 @@ zinit light BurntSushi/ripgrep
 zinit ice as"program" from"gh-r" mv"fd* -> fd" pick"fd/fd"
 zinit light sharkdp/fd
 
+#ghq
+zinit ice as"program" from"gh-r" mv"ghq* -> fd" pick"ghq/ghq"
+zinit light x-motemen/ghq
