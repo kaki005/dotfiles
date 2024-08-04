@@ -50,6 +50,7 @@ alias ls='ls -F'
 alias la='ls -Fa'
 alias ll='ls -Flh'
 alias lla='ls -Falh'
+alias sz="source ~/.zshrc"
 alias ..='cd ../'
 alias ...='cd ../../'
 alias dcom='docker-compose'

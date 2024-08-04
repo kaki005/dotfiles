@@ -1,6 +1,8 @@
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit light zdharma/fast-syntax-highlighting
 zinit light paulirish/git-open
+zinit load "mafredri/zsh-async"
+zinit load "chrissicool/zsh-256color"
 
 # bat command
 zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"

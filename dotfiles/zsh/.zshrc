@@ -48,6 +48,7 @@ export PATH=$SCRIPT_DIR/command:$PATH
 
 source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/config.zsh
+source $SCRIPT_DIR/command.zsh
 source $TOOL_DIR/p10k.zsh
 source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
 source $SCRIPT_DIR/key-bind.zsh
