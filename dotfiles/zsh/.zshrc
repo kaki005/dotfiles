@@ -74,12 +74,13 @@ zinit light-mode for \
 
 
 SCRIPT_DIR=$HOME/dotfiles/dotfiles/zsh
+TOOL_DIR=$SCRIPT_DIR/tool
 export PATH=$SCRIPT_DIR/command:$PATH
 
 source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/config.zsh
-source $SCRIPT_DIR/tool/p10k.zsh
-source $SCRIPT_DIR/tool/git-prompt.sh  # git-promptの読み込み
+source $TOOL_DIR/p10k.zsh
+source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
 fpath=(~/zsh $fpath)
 zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
 autoload -Uz compinit && compinit
@@ -93,4 +94,5 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%
 \$ '
 
 # cd-gitroot
-source $SCRIPT_DIR/tool/cd-gitroot.plugin.zsh
+fpath=($TOOL_DIR $fpath)
+autoload -Uz cd-gitroot
