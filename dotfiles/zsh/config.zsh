@@ -55,3 +55,4 @@ alias ..='cd ../'
 alias ...='cd ../../'
 alias dcom='docker-compose'
 alias dk='docker'
+alias cd="cdls"
