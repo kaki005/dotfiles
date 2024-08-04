@@ -22,6 +22,3 @@ zinit light BurntSushi/ripgrep
 zinit ice as"program" from"gh-r" mv"fd* -> fd" pick"fd/fd"
 zinit light sharkdp/fd
 
-# cd-gitroot
-zinit ice as"program" from"gh-r" mv"cd-gitroot* -> cd-gitroot" pick"cd-gitroot/cd-gitroot"
-zinit light mollifier/cd-gitroot
