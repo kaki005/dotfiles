@@ -19,11 +19,3 @@ zinit light eza-community/eza
 # riggrep
 zinit ice as"program" from"gh-r" mv"ripgrep* -> rg" pick"rg/rg"
 zinit light BurntSushi/ripgrep
-
-#fd
-zinit ice as"program" from"gh-r" mv"fd* -> fd" pick"fd/fd"
-zinit light sharkdp/fd
-
-#ghq
-zinit ice as"program" from"gh-r" mv"ghq* -> fd" pick"ghq/ghq"
-zinit light x-motemen/ghq
