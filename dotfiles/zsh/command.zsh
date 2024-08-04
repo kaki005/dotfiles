@@ -14,16 +14,8 @@ get_starred_repos ()
 if [[ $(command -v exa) ]]; then
     alias exa="eza -a --icons --git -h -g"
     alias ls="eza"
-
-    # cdls
-    cdls ()
-    {
-        cd "$@" && eza -a --icons --git -h -g
-    }
-else
-    alias ls="ls -a"
-    cdls ()
-    {
-        cd "$@" && ls
-    }
 fi
+cdls ()
+{
+    cd "$@"
+}
