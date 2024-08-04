@@ -6,6 +6,6 @@ if [ $(uname) = Darwin ]; then
     else
         echo "Since Homebrew is already installed, skip this phase and proceed."
     fi
-    brew bundle install --file=Brewfile
+    brew bundle install --file=~/dotfiles/scripts/Brewfile
 fi
 

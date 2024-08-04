@@ -28,5 +28,16 @@ function peco-cdr () {
 zle -N peco-cdr
 bindkey '^Q' peco-cdr
 
+## カレントディレクトリ以下のディレクトリ検索・移動
+function find_cd() {
+  local selected_dir=$(find . -type d | peco)
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+}
+zle -N find_cd
+bindkey '^W' find_cd
+
 
 
