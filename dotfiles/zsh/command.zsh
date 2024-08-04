@@ -11,15 +11,14 @@ get_starred_repos ()
 }
 
 
-# exa: https://github.com/ogham/exa
 if [[ $(command -v exa) ]]; then
-    alias exa="exa -a --icons --git -h -g"
-    alias ls="exa"
+    alias exa="eza -a --icons --git -h -g"
+    alias ls="eza"
 
     # cdls
     cdls ()
     {
-        cd "$@" && exa -a --icons --git -h -g
+        cd "$@" && eza -a --icons --git -h -g
     }
 else
     alias ls="ls -a"
