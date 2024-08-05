@@ -1,3 +1,47 @@
 {
-    "editor.fontSize": 16,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.autopep8",
+    },
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E402,W503",
+        "--max-line-length=200"
+    ],
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--aggressive",
+        "--ignore=E402,W503",
+        "--max-line-length=200"
+    ],
+    "autoDocstring.docstringFormat": "google",
+    "python.defaultInterpreterPath": "/Users/skakio/.pyenv/versions/3.10.7/bin/python",
+    "editor.formatOnSave": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "files.autoSave": "onWindowChange",
+    "autopep8.args": [
+        " --max-line-length=150"
+    ],
+    "python.venvPath": "/Users/skakio/Library/Caches/pypoetry/virtualenvs",
+    "ruff.interpreter": [
+        "/Users/skakio/Library/Caches/pypoetry/virtualenvs"
+    ],
+    "autopep8.interpreter": [
+        "/Users/skakio/Library/Caches/pypoetry/virtualenvs"
+    ],
+    // ------------------------------------------------
+    "window.zoomLevel": 1,
+    "python.languageServer": "Pylance",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.watcherExclude": {
+        "**": true
+    },
+    "terminal.integrated.cwd": "/Users/skakio/Desktop/Git"
 }
