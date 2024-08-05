@@ -1,0 +1,36 @@
+# Automatically hide or show the Dock （Dock を自動的に隠す）
+defaults write com.apple.dock autohide -bool true
+# Wipe all app icons from the Dock （Dock に標準で入っている全てのアプリを消す、Finder とごみ箱は消えない）
+defaults write com.apple.dock persistent-apps -array
+# Set the icon size （アイコンサイズの設定）
+defaults write com.apple.dock tilesize -int 55
+# Magnificate the Dock （Dock の拡大機能を入にする）
+defaults write com.apple.dock magnification -bool true
+
+
+# Automatically open a new Finder window when a volume is mounted
+# マウントされたディスクがあったら、自動的に新しいウィンドウを開く
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Set `${HOME}` as the default location for new Finder windows
+# 新しいウィンドウでデフォルトでホームフォルダを開く
+defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
+# Show Status bar in Finder （ステータスバーを表示）
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Show Path bar in Finder （パスバーを表示）
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show Tab bar in Finder （タブバーを表示）
+defaults write com.apple.finder ShowTabView -bool true
+
+# Show the ~/Library directory （ライブラリディレクトリを表示、デフォルトは非表示）
+chflags nohidden ~/Library
+
+# Show the hidden files （不可視ファイルを表示）
+defaults write com.apple.finder AppleShowAllFiles YES
+
