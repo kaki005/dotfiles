@@ -34,3 +34,60 @@ chflags nohidden ~/Library
 # Show the hidden files （不可視ファイルを表示）
 defaults write com.apple.finder AppleShowAllFiles YES
 
+# ============
+# trackpad
+# ===========
+# Enable `Tap to click` （タップでクリックを有効にする）
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Map bottom right Trackpad corner to right-click （右下をクリックで、副クリックに割り当てる）
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+
+
+# =============
+# ohters
+# ============
+# Avoid creating `.DS_Store` files on network volumes （ネットワークディスクで、`.DS_Store` ファイルを作らない）
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Hide the battery percentage from the menu bar （バッテリーのパーセントを非表示にする）
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+
+# Date options: Show the day of the week: on （日付表示設定、曜日を表示）
+defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE H:mm'
+
+# Disable the "Are you sure you want to open this application?" dialog
+# 未確認のアプリケーションを実行する際のダイアログを無効にする
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Automatically quit the printer app once the print jobs are completed
+# 印刷が終了したら、自動的にプリンターアプリを終了する
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Save screenshots as PNGs （スクリーンショット保存形式をPNGにする）
+defaults write com.apple.screencapture type -string "png"
+
+# Require password immediately after the computer went into
+# sleep or screen saver mode （スリープまたはスクリーンセーバから復帰した際、パスワードをすぐに要求する）
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Expand save panel by default （保存パネルをデフォルトで開いた状態にする）
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default （印刷パネルをデフォルトで開いた状態にする）
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+# Hide the Time Machine and Volume icons from the menu bar （メニューバーのTime Machine と音量アイコンを非表示にする）
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+    sudo defaults write "${domain}" dontAutoLoad -array \
+        "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+        "/System/Library/CoreServices/Menu Extras/Volume.menu"
+done
+
