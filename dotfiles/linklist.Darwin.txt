@@ -3,3 +3,5 @@
 #vscode/Code/User/keybindings.json   ${HOME}/Library/ApplicationSupport/Code/Userkeybindings.json
 #vscode/Code/User/locale.json        ${HOME}/Library/ApplicationSupport/Code/User/locale.json
 #vscode/Code/User/snippets           ${HOME}/Library/ApplicationSupport/Code/User/snippets
+
+mac/.macos                            ${HOME}/
