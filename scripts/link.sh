@@ -18,3 +18,10 @@ for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
         __ln ${target} ${link}
     done
 done
+
+if [ "$(uname)" == 'Darwin' ]; then
+    __ln "vscode/User/settings.json " "~/Library/Application\ Support/Code/User/settings.json"
+    __ln "vscode/User/keybindings.json " "~/Library/Application\ Support/Code/User/keybindings.json"
+    __ln "vscode/User/locale.json " "~/Library/Application\ Support/Code/User/locale.json"
+    __ln "vscode/User/snippets " "~/Library/Application\ Support/Code/User/snippets"
+fi
