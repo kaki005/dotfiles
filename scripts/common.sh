@@ -27,6 +27,6 @@ __mkdir() {(
 __remove_linklist_comment() {(
     # '#'以降と空行を削除
     sed -e 's/\s*#.*//' \
-        # -e '/^\s*$/d' \
+        -e '/^\s*$/d' \
         $1
 )}
