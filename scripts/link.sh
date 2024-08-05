@@ -3,7 +3,7 @@
 # 関数の読み込み
 dotfiles_root=$(cd $(dirname $0)/.. && pwd)
 . ${dotfiles_root}/scripts/common.sh
-
+export $APPDATA="~/Library/Application Support"
 # シンボリックリンクを作成
 cd ${dotfiles_root}/dotfiles
 for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
