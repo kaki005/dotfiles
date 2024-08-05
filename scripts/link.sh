@@ -3,7 +3,6 @@
 # 関数の読み込み
 dotfiles_root=$(cd $(dirname $0)/.. && pwd)
 . ${dotfiles_root}/scripts/common.sh
-export $APPDATA="~/Library/Application Support"
 # シンボリックリンクを作成
 cd ${dotfiles_root}/dotfiles
 for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
@@ -20,8 +19,8 @@ for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
 done
 
 if [ "$(uname)" == 'Darwin' ]; then
-    __ln vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-    __ln vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-    __ln vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json
-    __ln vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+    __ln ~dotfiles/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+    __ln ~dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+    __ln ~dotfiles/dotfiles/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json
+    __ln ~dotfiles/dotfiles/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
 fi

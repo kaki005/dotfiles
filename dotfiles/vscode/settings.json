@@ -85,6 +85,9 @@
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.wrapTabs": true,
     "workbench.list.smoothScrolling": true,
-    "workbench.view.alwaysShowHeaderActions": true
-
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.editor.customLabels.patterns": {
+        "**/index.*": "${dirname} .../${dirname(1)}",
+        "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
+      }
 }
