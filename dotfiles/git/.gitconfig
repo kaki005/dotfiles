@@ -10,7 +10,13 @@
 	# 上の省略形
     gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
     resf = reset --soft HEAD^
+    resh = reset --hard HEAD^
     rmc = rm -r --cached .
+    # log
+    l = log --graph --date=short
+    changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+    short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+    simple = log --pretty=format:\" * %s\"
 
 [credential]
     helper=store
@@ -19,3 +25,15 @@
 [ghq]
   root = ~/Desktop
   root = ~/Document
+
+[color]
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
