@@ -46,6 +46,7 @@ function peco-src () {
   if [ -n "$selected_dir" ]; then
     BUFFER="cd ${selected_dir}"
     zle accept-line
+    git pull
   fi
   zle clear-screen
 }
