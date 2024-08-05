@@ -1,7 +1,7 @@
 # Visual Studio Code
-vscode/Code/User/settings.json      ~/Library/ApplicationSupport/Code/User/settings.json
-vscode/Code/User/keybindings.json   ~/Library/ApplicationSupport/Code/User/keybindings.json
-vscode/Code/User/locale.json        ~/Library/ApplicationSupport/Code/User/locale.json
-vscode/Code/User/snippets           ~/Library/ApplicationSupport/Code/User/snippets
+vscode/Code/User/settings.json      ~/Library/Application\ Support/Code/User/settings.json
+vscode/Code/User/keybindings.json   ~/Library/Application\ Support/Code/User/keybindings.json
+vscode/Code/User/locale.json        ~/Library/Application\ Support/Code/User/locale.json
+vscode/Code/User/snippets           ~/Library/Application\ Support/Code/User/snippets
 
 mac/.macos                            ${HOME}/.macos
