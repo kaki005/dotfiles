@@ -6,29 +6,20 @@
         },
         "editor.defaultFormatter": "ms-python.autopep8",
     },
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
+    "flake8.args": [
         "--ignore=E402,W503",
-        "--max-line-length=200"
+        "--max-line-length=200",
+        "pyproject.toml"
     ],
-    "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Args": [
-        "--aggressive",
-        "--aggressive",
-        "--ignore=E402,W503",
-        "--max-line-length=200"
+    "autopep8.args": [
+        "--global-config",
+        "pyproject.toml"
     ],
     "autoDocstring.docstringFormat": "google",
     "python.defaultInterpreterPath": "/Users/skakio/.pyenv/versions/3.10.7/bin/python",
     "editor.formatOnSave": true,
     "python.analysis.typeCheckingMode": "basic",
     "files.autoSave": "onWindowChange",
-    "autopep8.args": [
-        " --max-line-length=150"
-    ],
     "python.venvPath": "/Users/skakio/Library/Caches/pypoetry/virtualenvs",
     "ruff.interpreter": [
         "/Users/skakio/Library/Caches/pypoetry/virtualenvs"
@@ -44,7 +35,6 @@
         "**": true
     },
     "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
-
     "editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -64,7 +54,11 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.autoGuessEncoding": true,
-    "files.candidateGuessEncodings": ["utf8", "shiftjis", "eucjp"],
+    "files.candidateGuessEncodings": [
+        "utf8",
+        "shiftjis",
+        "eucjp"
+    ],
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -72,7 +66,7 @@
     "scm.defaultViewMode": "tree",
     "scm.diffDecorationsGutterWidth": 5,
     "scm.inputFontFamily": "editor",
-    "scm.inputFontSize": 14,
+    "scm.inputFontSize": 20,
     "search.showLineNumbers": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
@@ -89,5 +83,5 @@
     "workbench.editor.customLabels.patterns": {
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
-      }
+    }
 }

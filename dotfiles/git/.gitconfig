@@ -24,7 +24,7 @@
     postBuffer=524288000
 [ghq]
   root = ~/Desktop
-  root = ~/Document
+  root = ~/Documents
 
 [color]
   ui = true
