@@ -25,7 +25,8 @@
 [ghq]
   root = ~/Desktop
   root = ~/Documents
-
+[commit]
+  verbose=true
 [color]
   ui = true
 [color "branch"]
