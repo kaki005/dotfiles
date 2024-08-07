@@ -12,3 +12,6 @@ screen/.screenrc 	${HOME}/.screenrc
 
 # bashsh
 bash/.bashrc		${HOME}/.bashrc
+
+#nvim
+nvim			${HOME}/.config/nvim
