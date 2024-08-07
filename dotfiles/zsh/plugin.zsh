@@ -12,7 +12,7 @@ if builtin command -v bat > /dev/null; then
   alias cat="bat"
 fi
 
-
 # riggrep
-zinit ice as"program" from"gh-r" mv"ripgrep* -> rg" pick"rg/rg"
-zinit light BurntSushi/ripgrep
+zinit wait lucid light-mode as'program' from'gh-r' for \
+    pick'ripgrep*/rg' @'BurntSushi/ripgrep'
+
