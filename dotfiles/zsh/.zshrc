@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source /opt/etc/envrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -52,6 +53,7 @@ source $SCRIPT_DIR/command.zsh
 source $TOOL_DIR/p10k.zsh
 source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
 source $SCRIPT_DIR/key-bind.zsh
+source $SCRIPT_DIR/export.zsh
 fpath=(~/zsh $fpath)
 zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
 autoload -Uz compinit && compinit
@@ -67,4 +69,3 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%
 # cd-gitroot
 fpath=($TOOL_DIR $fpath)
 autoload -Uz cd-gitroot
-source /opt/etc/envrc
