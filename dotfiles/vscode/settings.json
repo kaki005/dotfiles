@@ -1,6 +1,6 @@
 {
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": false, // 貼り付け時にフォーマットするか。
+    "editor.formatOnPaste": true, // 貼り付け時にフォーマットするか。
     "editor.formatOnType": false, // 入力時にフォーマットするか。
     "[python]": {
         "editor.codeActionsOnSave": {
@@ -28,11 +28,13 @@
         "/home/yokoyama/target/path",
     ],
     "workbench.iconTheme": "material-icon-theme",
-    "files.watcherExclude": {
+    "files.watcherExclude": { // 監視除外対象
         "**": true
     },
     "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
-    "editor.bracketPairColorization.enabled": true,
+    "debug.openDebug": "openOnSessionStart",
+    "debug.inlineValues": "on",
+    "editor.bracketPairColorizativon.enabled": true,
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
@@ -46,19 +48,33 @@
     "editor.renderWhitespace": "all",
     "editor.showFoldingControls": "always",
     "editor.smoothScrolling": true,
+    "editor.renderControlCharacters": true,
+    "editor.copyWithSyntaxHighlighting": false, // テキストのみコピー
     "editor.wordSegmenterLocales": "ja",
     "editor.wrappingIndent": "indent",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.autoGuessEncoding": true,
+    "files.exclude": { // 非表示ファイル
+        "**/__pycache__": true,
+        "**/.ruff_cache": true,
+        "**/.venv": true,
+        "**/plot": true,
+        "**/data": true,
+        "requirements.lock": true,
+        "requirements-dev.lock": true,
+        ".python-version": true,
+        "LICENSE": true,
+    },
+    "files.eol": "\n", // 改行記号
     "files.candidateGuessEncodings": [
         "utf8",
         "shiftjis",
         "eucjp"
     ],
     "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true, // 終了時に空行削除
+    "files.trimTrailingWhitespace": true, // 保存時に無駄な半角スペースを削除
     "scm.alwaysShowRepositories": true,
     "scm.defaultViewMode": "tree",
     "scm.diffDecorationsGutterWidth": 5,
