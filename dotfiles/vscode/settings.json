@@ -24,6 +24,9 @@
     // ------------------------------------------------
     "window.zoomLevel": 1,
     "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "/home/yokoyama/target/path",
+    ],
     "workbench.iconTheme": "material-icon-theme",
     "files.watcherExclude": {
         "**": true

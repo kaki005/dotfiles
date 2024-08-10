@@ -44,8 +44,9 @@ export LANG=ja_JP.UTF-8
 setopt correct
 # ビープ音を鳴らさない
 setopt no_beep
-# 特殊文字をエスケープ
-unsetopt nomatch
+# 特殊文字をエスケープしない
+setopt +o nomatch
+
 #################################  ALIAS  #################################
 alias ls='ls -F'
 alias la='ls -Fa'
