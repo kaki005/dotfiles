@@ -67,3 +67,4 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%
 # cd-gitroot
 fpath=($TOOL_DIR $fpath)
 autoload -Uz cd-gitroot
+source /opt/etc/envrc
