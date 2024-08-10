@@ -10,7 +10,7 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "autoDocstring.docstringFormat": "google",
-    "python.defaultInterpreterPath": "/Users/skakio/.pyenv/versions/3.10.7/bin/python",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "python.analysis.typeCheckingMode": "basic",
     "files.autoSave": "onWindowChange",
     "python.venvPath": "/Users/skakio/Library/Caches/pypoetry/virtualenvs",
