@@ -12,6 +12,7 @@
     resf = reset --soft HEAD^
     resh = reset --hard HEAD^
     rmc = rm -r --cached .
+    rmlocal = clean -df
     # log
     l = log --graph --date=short
     changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
