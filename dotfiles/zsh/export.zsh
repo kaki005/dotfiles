@@ -9,3 +9,5 @@ export DOTFILES_DIR="$HOME/dotfiles"
 COMMAND_DIR="$DOTFILES_DIR/command"
 export PATH=$COMMAND_DIR:$PATH
 
+export HIST_DIR="$HOME/.history"
+export LESSKEY=${DOTFILES_DIR}/dotfiles/less

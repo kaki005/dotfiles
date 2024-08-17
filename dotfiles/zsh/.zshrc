@@ -47,10 +47,9 @@ source $SCRIPT_DIR/command.zsh
 source $SCRIPT_DIR/update-check.zsh
 source $SCRIPT_DIR/key-bind.zsh
 source $SCRIPT_DIR/plugin.zsh
+
 #################################  history  #################################
-export HIST_DIR="$HOME/.history"
 if [[ ! -r "$HIST_DIR" ]] then
     mkdir $HIST_DIR
 fi
 export HISTFILE="$HIST_DIR/.zsh-history"
-echo $HISTFILE
