@@ -1,0 +1,62 @@
+#*******************************************************************************
+#
+# .alias
+#
+#   現在設定されているaliasを調べる
+#    $ alias [コマンド名]
+#   typeコマンドでもaliasが表示される
+#    $ type [-a] <コマンド名>
+#   aliasを無効にして実行
+#    $ \cmd
+#   alias/シェル関数を無視して実行
+#    $ command cmd
+#   全てのシェル変数を表示
+#    $ declare
+#   関数の名前/定義を表示
+#    $ declare -f <関数名>
+#
+#*******************************************************************************
+alias ps='ps --sort=start_time'
+alias sc='screen'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ps='ps --sort=start_time'
+alias python='python3'
+alias rr='rye run'
+alias rp='rye run python'
+alias sb='source $HOME/.bashrc'
+alias sz="source ~/.zshrc"
+alias grep="rg"
+alias dcom='docker-compose'
+alias dk='docker'
+alias finder='open .'
+# lsの結果を色付きで表示してくれる
+alias ls="ls -F --color=auto"
+alias ll='ls -AlFh --show-control-chars --color=auto'
+alias la='ls -CFal'
+# ○○するときに、本当に○○していいか聞いてくれる系のエイリアス
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+# git系のエイリアス
+alias gb="git branch"
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gl='git pull'
+alias gc='git commit'
+alias gp='git push'
+alias gst='git status'
+alias ga='git add'
+# pwd
+#  -P シンボリックリンクをたどらず実ディレクトリを表示
+#  -L シンボリックリンクをたどったディレクトリを表示
+alias pwd='pwd -P'
+# date
+alias dates='date "+%Y-%m-%d %T.%N"'
+alias today="date '+%Y%m%d'"
+alias today_="date '+%Y-%m-%d'"
+alias now="date '+%Y%m%d_%H%M%S'"
+alias now_="date '+%Y-%m-%d_%H%M%S'"
+# PATH
+# 改行区切りで表示
+alias printpath='echo $PATH | tr ":" "\n"'

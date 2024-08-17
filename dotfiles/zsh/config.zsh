@@ -44,17 +44,3 @@ setopt correct
 setopt no_beep
 # 特殊文字をエスケープしない
 setopt +o nomatch
-
-#################################  ALIAS  #################################
-alias ls='ls -F'
-alias la='ls -Fla'
-alias ll='ls -Flh'
-alias lla='ls -Falh'
-alias sz="source ~/.zshrc"
-alias ..='cd ../'
-alias ...='cd ../../'
-alias dcom='docker-compose'
-alias dk='docker'
-alias grep='rg'
-alias rr='rye run'
-alias rp='rye run python'

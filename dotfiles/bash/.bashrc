@@ -1,5 +1,3 @@
-# ctrl+s で出力がロックされてしまうのを防ぐ
-stty stop undef
 source $HOME/.rye/env
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -9,37 +7,23 @@ fi
 if [ -f /etc/profile.d/alias ]; then
 	source /etc/profile.d/alias
 fi
+# Source alias
+if [ -f ~dotfiles/dotfiles/.alias]; then
+	source ~dotfiles/dotfiles/.alias
+fi
 
-# =====================
+# ====================
+# config
+# ====================
+# 新しく作られたファイルのパーミッションを 644 に
+umask 022
+# リダイレクションによるファイルの上書きを禁止
+set -o noclobber
+# cdコマンドの補完ではディレクトリのみを対象にする
+complete -d cd
+# ====================
 # alias
 # ====================
-# よく使うエイリアスやら各コマンドのデフォルトのオプションを設定
-alias ll='ls -AlFh --show-control-chars --color=auto'
-alias la='ls -CFal'
-alias mv='mv -i'
-alias rm='rm -i'
-alias cp='cp -i'
-alias sc='screen'
-alias ps='ps --sort=start_time'
-alias python='python3'
-# lsの結果を色付きで表示してくれる
-alias ls="ls --color=auto"
-# ○○するときに、本当に○○していいか聞いてくれる系のエイリアス
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ..='cd ..'
-# git系のエイリアス
-alias gb="git branch"
-alias gco='git checkout'
-alias gcm='git checkout master'
-alias gl='git pull'
-alias gc='git commit'
-alias gp='git push'
-alias gst='git status'
-alias ga='git add'
-alias sb='source $HOME/.bashrc'
-alias grep="rg"
 
 
 # =====================
@@ -82,7 +66,8 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 # stashがある場合は「$」で示す
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
-export PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
+export PS1="[\[\e[0;32m\]\u\[\e[0;33m\]@\[\e[0;32m\]\h:\[\e[0;36m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
+#export PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
 #export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
 
 
