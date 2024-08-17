@@ -8,9 +8,7 @@ if [ -f /etc/profile.d/alias ]; then
 	source /etc/profile.d/alias
 fi
 # Source alias
-if [ -f ~dotfiles/dotfiles/.alias]; then
-	source ~dotfiles/dotfiles/.alias
-fi
+source ~/dotfiles/dotfiles/.alias
 
 # ====================
 # config
@@ -21,11 +19,6 @@ umask 022
 set -o noclobber
 # cdコマンドの補完ではディレクトリのみを対象にする
 complete -d cd
-# ====================
-# alias
-# ====================
-
-
 # =====================
 # 環境変数
 # =====================
@@ -54,6 +47,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
 DOTFILES_DIR="$HOME/dotfiles"
 
+
 # =====================
 # プロンプトの表示
 # =====================
@@ -66,14 +60,10 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 # stashがある場合は「$」で示す
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
-export PS1="[\[\e[0;32m\]\u\[\e[0;33m\]@\[\e[0;32m\]\h:\[\e[0;36m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
-#export PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
+#export PS1="[\[\e[0;32m\]\u\[\e[0;33m\]@\[\e[0;32m\]\h:\[\e[0;36m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
+export PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "
 #export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
 
 
-# ====================
-# コマンド
-# ===================
-cdls() {
-    cd "$@" && ls
-}
+
+echo ".bashrc load complated"

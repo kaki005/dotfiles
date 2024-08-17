@@ -60,3 +60,19 @@ alias now_="date '+%Y-%m-%d_%H%M%S'"
 # PATH
 # 改行区切りで表示
 alias printpath='echo $PATH | tr ":" "\n"'
+
+echo "alias load completed"
+
+
+# ====================
+# コマンド
+# ===================
+cdls() {
+    cd "$@" && ls
+}
+
+google() {
+    local url="https://google.co.jp/search?q=${*// /+}"
+    local browser="Google Chrome"
+    open $url -a $browser
+}
