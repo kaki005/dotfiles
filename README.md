@@ -17,6 +17,17 @@ dotfiles/scripts/install.sh
   - 小ディレクトリから選んで移動
 ## Command
 - git-open [git](https://github.com/paulirish/git-open)
+  - 今いるレポジトリをブラウザで開きます。  
 - ghq
+  - gitレポジトリ管理に使います。
 - fd [git](https://github.com/sharkdp/fd)
-- 
+  - ファイル高速検索
+- bat
+  - catを文字に色を付けてくれる版
+- riggrep
+  - grepの高速版      
+
+
+
+### Tips
+- [権限なしでBrewをinstall](https://zenn.dev/toshihiro_tange/articles/mac-install-homebrew-no-admin-rights)
