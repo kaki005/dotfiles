@@ -47,6 +47,9 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
 DOTFILES_DIR="$HOME/dotfiles"
 
+export HIST_DIR="$HOME/.history"
+mkdir $HIST_DIR
+export HISTFILE="$HIST_DIR/.bash_history"
 
 # =====================
 # プロンプトの表示

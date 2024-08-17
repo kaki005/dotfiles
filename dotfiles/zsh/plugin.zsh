@@ -31,4 +31,5 @@ autoload -Uz compinit && compinit
 fpath=($TOOL_DIR $fpath)
 autoload -Uz cd-gitroot
 
-
+eval "$(pyenv init -)"
+eval "$(direnv hook zsh)"

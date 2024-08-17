@@ -1,4 +1,4 @@
-source $SCRIPT_DIR/export.zsh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -9,7 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/op/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-
+source $HOME/dotfiles/dotfiles/zsh/export.zsh
 
 #################################  zinit  #################################
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -36,18 +36,21 @@ zinit light-mode for \
 
 
 #################################  others  #################################
+if [[ -f "/opt/etc/envrc" ]] then
+    source /opt/etc/envrc
+fi
 source $DOTFILES_DIR/dotfiles/.alias
 SCRIPT_DIR=$DOTFILES_DIR/dotfiles/zsh
 TOOL_DIR=$SCRIPT_DIR/tool
-source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/config.zsh
 source $SCRIPT_DIR/command.zsh
 source $SCRIPT_DIR/update-check.zsh
 source $SCRIPT_DIR/key-bind.zsh
-
-if [[ -f "/opt/etc/envrc" ]] then
-    source /opt/etc/envrc
+source $SCRIPT_DIR/plugin.zsh
+#################################  history  #################################
+export HIST_DIR="$HOME/.history"
+if [[ ! -r "$HIST_DIR" ]] then
+    mkdir $HIST_DIR
 fi
-# if [[ -f "/opt/etc/envrc"]] then
-#   source /opt/etc/envrc
-# fi
+export HISTFILE="$HIST_DIR/.zsh-history"
+echo $HISTFILE
