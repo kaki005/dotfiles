@@ -38,8 +38,6 @@ setopt AUTO_PARAM_KEYS
 # disable ctrl+s, ctrl+q
 setopt no_flow_control
 
-export LANG=ja_JP.UTF-8
-
 # コマンドのスペルを訂正
 setopt correct
 # ビープ音を鳴らさない
