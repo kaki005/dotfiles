@@ -51,7 +51,7 @@ TOOL_DIR=$SCRIPT_DIR/tool
 source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/config.zsh
 source $SCRIPT_DIR/command.zsh
-source $TOOL_DIR/p10k.zsh
+#source $TOOL_DIR/p10k.zsh
 source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
 source $SCRIPT_DIR/key-bind.zsh
 source $SCRIPT_DIR/export.zsh
@@ -64,9 +64,10 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 # プロンプトの表示設定(好きなようにカスタマイズ可)
-setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
-\$ '
+#setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
 
 # cd-gitroot
 fpath=($TOOL_DIR $fpath)
 autoload -Uz cd-gitroot
+# starship
+eval "$(starship init zsh)"
