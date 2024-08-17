@@ -18,3 +18,4 @@ nvim			${HOME}/.config/nvim
 
 #starship
 starship/starship.toml    ${HOME}/.config/starship.toml
+starship/fonts            ${HOME}/.local/share/fonts
