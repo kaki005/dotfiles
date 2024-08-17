@@ -4,7 +4,7 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-if [ -f /opt/etc/envrc]; then
+if [[ -f /opt/etc/envrc]]; then
   source /opt/etc/envrc
 fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -44,7 +44,7 @@ zinit light-mode for \
 
 
 # Source alias
-if [ -f ~dotfiles/dotfiles/.alias]; then
+if [[ -f ~dotfiles/dotfiles/.alias]]; then
 	source ~dotfiles/dotfiles/.alias
 fi
 SCRIPT_DIR=$HOME/dotfiles/dotfiles/zsh
