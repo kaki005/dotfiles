@@ -39,6 +39,7 @@ alias gp='git push'
 alias gst='git status'
 alias ga='git add'
 alias sb='source $HOME/.bashrc'
+alias grep="rg"
 
 
 # =====================
@@ -46,6 +47,7 @@ alias sb='source $HOME/.bashrc'
 # =====================
 # もろもろ環境変数を設定
 export PATH=$PATH:/sbin:/usr/sbin # パス
+export PATH="$PATH:$HOME/homebrew/bin"
 export PAGER='/usr/bin/lv -c' # man とかで使われる
 export EDITOR='/usr/bin/vim' # visudo とかで使われる
 export HISTSIZE=100000 # これだけコマンド履歴を残す
