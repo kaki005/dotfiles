@@ -16,3 +16,5 @@ fi
 zinit wait lucid light-mode as'program' from'gh-r' for \
     pick'ripgrep*/rg' @'BurntSushi/ripgrep'
 
+# starship
+eval "$(starship init zsh)"

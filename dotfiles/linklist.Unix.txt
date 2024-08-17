@@ -15,3 +15,6 @@ bash/.bashrc		${HOME}/.bashrc
 
 #nvim
 nvim			${HOME}/.config/nvim
+
+#starship
+starship/starship.toml    ${HOME}/.config/starship.toml
