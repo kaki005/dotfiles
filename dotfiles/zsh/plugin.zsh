@@ -18,3 +18,17 @@ zinit wait lucid light-mode as'program' from'gh-r' for \
 
 # starship
 eval "$(starship init zsh)"
+
+
+SCRIPT_DIR=$DOTFILES_DIR/dotfiles/zsh
+TOOL_DIR=$SCRIPT_DIR/tool
+#source $TOOL_DIR/p10k.zsh
+source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
+fpath=(~/zsh $fpath)
+zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
+autoload -Uz compinit && compinit
+# cd-gitroot
+fpath=($TOOL_DIR $fpath)
+autoload -Uz cd-gitroot
+
+

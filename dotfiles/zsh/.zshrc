@@ -1,24 +1,17 @@
+source $SCRIPT_DIR/export.zsh
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-#if [[ -r "/opt/etc/envrc"]] then
-  source /opt/etc/envrc
-#fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/op/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
 
-### Added by Zinit's installer
+#################################  zinit  #################################
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
     command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
@@ -42,32 +35,19 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 
-
-# Source alias
-source ~/dotfiles/dotfiles/.alias
-SCRIPT_DIR=$HOME/dotfiles/dotfiles/zsh
+#################################  others  #################################
+source $DOTFILES_DIR/dotfiles/.alias
+SCRIPT_DIR=$DOTFILES_DIR/dotfiles/zsh
 TOOL_DIR=$SCRIPT_DIR/tool
-
 source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/config.zsh
 source $SCRIPT_DIR/command.zsh
-#source $TOOL_DIR/p10k.zsh
-source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
+source $SCRIPT_DIR/update-check.zsh
 source $SCRIPT_DIR/key-bind.zsh
-source $SCRIPT_DIR/export.zsh
-fpath=(~/zsh $fpath)
-zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
-autoload -Uz compinit && compinit
-# プロンプトのオプション表示設定
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWUPSTREAM=auto
-# プロンプトの表示設定(好きなようにカスタマイズ可)
-#setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
 
-# cd-gitroot
-fpath=($TOOL_DIR $fpath)
-autoload -Uz cd-gitroot
-# starship
-eval "$(starship init zsh)"
+if [[ -f "/opt/etc/envrc" ]] then
+    source /opt/etc/envrc
+fi
+# if [[ -f "/opt/etc/envrc"]] then
+#   source /opt/etc/envrc
+# fi
