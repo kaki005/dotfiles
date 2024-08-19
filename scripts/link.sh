@@ -18,6 +18,9 @@ for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
     done
 done
 
+
+# rtx
+curl https://rtx.pub/install.sh | sh
 if [ "$(uname)" == 'Darwin' ]; then
     __ln ~/dotfiles/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
     __ln ~/dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json

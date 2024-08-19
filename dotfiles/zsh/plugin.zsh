@@ -33,3 +33,4 @@ autoload -Uz cd-gitroot
 
 eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
+eval "$(~/.local/share/rtx/bin/rtx activate zsh)"
