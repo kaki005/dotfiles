@@ -6,6 +6,11 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 COMMAND_DIR="$DOTFILES_DIR/command"
 export PATH=$COMMAND_DIR:$PATH
 
+
+
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+
+
 # Rye if exists
 if [[ -s "$HOME/.rye/env" ]]; then
   . "$HOME/.rye/env"
@@ -19,6 +24,8 @@ if [[ -s "$HOME/.pyenv/" ]]; then
   eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
 fi
+
+
 
 
 # Cargo
