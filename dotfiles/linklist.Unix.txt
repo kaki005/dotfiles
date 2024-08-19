@@ -3,6 +3,7 @@ vim/.vimrc              ${HOME}/.vimrc
 
 # zsh
 zsh/.zshrc		${HOME}/.zshrc
+zsh/.zshenv		${HOME}/.zshenv
 
 # git
 git/.gitconfig		${HOME}/.gitconfig
