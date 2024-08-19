@@ -16,11 +16,12 @@
 #    $ declare -f <関数名>
 #
 #*******************************************************************************
-alias ps='ps --sort=start_time'
 alias sc='screen'
 alias ..='cd ../'
 alias ...='cd ../../'
-alias ps='ps --sort=start_time'
+alias ps='procs --tree'
+alias cd='z'
+alias curl='https'
 alias python='python3'
 alias rr='rye run'
 alias rp='rye run python'
@@ -31,9 +32,9 @@ alias dcom='docker-compose'
 alias dk='docker'
 alias finder='open .'
 # lsの結果を色付きで表示してくれる
-alias ls="ls -F --color=auto"
-alias ll='ls -AlFh --show-control-chars --color=auto'
-alias la='ls -CFal'
+alias ls="eza --color=auto --icons"
+alias ll='eza -l--show-control-chars --color=auto --icons'
+alias la='eza -la --icons'
 # ○○するときに、本当に○○していいか聞いてくれる系のエイリアス
 alias rm='rm -i'
 alias mv='mv -i'
