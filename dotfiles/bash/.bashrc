@@ -69,6 +69,8 @@ GIT_PS1_SHOWUPSTREAM=auto
 
 #starshp
 eval "$(starship init bash)"
+# rtx
+eval "$(~/.local/share/rtx/bin/rtx activate zsh)"
 
 # =====================
 # alias
