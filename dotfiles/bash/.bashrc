@@ -67,7 +67,9 @@ GIT_PS1_SHOWUPSTREAM=auto
 #export PS1="\[\e[1;32m\]\u@\h\[\e[m\] \e[35m\t \[\e[1;36m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\n\$ "
 #export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
 
-#starshp
+# zoxyide
+eval "$(zoxide init bash)"
+# starshp
 eval "$(starship init bash)"
 # rtx
 eval "$(~/.local/share/rtx/bin/rtx activate bash)"
