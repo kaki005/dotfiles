@@ -71,8 +71,6 @@ GIT_PS1_SHOWUPSTREAM=auto
 eval "$(zoxide init bash)"
 # starshp
 eval "$(starship init bash)"
-# rtx
-eval "$(~/.local/share/rtx/bin/rtx activate bash)"
 
 # =====================
 # alias
