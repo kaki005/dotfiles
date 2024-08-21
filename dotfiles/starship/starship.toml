@@ -35,7 +35,7 @@ $lua
 $rust
 $time
 $battery
-$memory_usage
+$memory_usage  
 """
 [fill]
 symbol = '─'
