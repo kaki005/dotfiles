@@ -4,6 +4,7 @@ vim/.vimrc              ${HOME}/.vimrc
 # zsh
 zsh/.zshrc		${HOME}/.zshrc
 zsh/.zshenv		${HOME}/.zshenv
+zsh/.zprofile   ${HOME}/.zprofile
 
 # git
 git/.gitconfig		${HOME}/.gitconfig

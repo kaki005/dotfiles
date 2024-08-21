@@ -53,3 +53,5 @@ if [[ ! -r "$HIST_DIR" ]] then
     mkdir $HIST_DIR
 fi
 export HISTFILE="$HIST_DIR/.zsh-history"
+
+echo "zsh completed"

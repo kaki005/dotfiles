@@ -5,9 +5,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 COMMAND_DIR="$DOTFILES_DIR/command"
 export PATH=$COMMAND_DIR:$PATH
-
-
-
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
 
 
@@ -15,17 +12,6 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include"
 if [[ -s "$HOME/.rye/env" ]]; then
   . "$HOME/.rye/env"
 fi
-
-
-## pyenv
-#if [[ -s "$HOME/.pyenv/" ]]; then
-#  export PYENV_ROOT="$HOME/.pyenv"
-#  export PATH="$PYENV_ROOT/bin:$PATH"
-#  eval "$(pyenv init --path)"
-#  eval "$(pyenv init -)"
-#fi
-
-
 
 
 # Cargo

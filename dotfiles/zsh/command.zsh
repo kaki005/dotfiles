@@ -12,7 +12,7 @@ get_starred_repos ()
 
 
 chpwd() {
-  if [[ $(ls | wc -l) -ge 20 ]]; then
+  if [[ $(ls | wc -l) -ge 10 ]]; then
     # print as grid
     eza -G -a -F --icons --group-directories-first --git --color=always --ignore-glob=".DS_Store|__*"
   else
