@@ -11,11 +11,12 @@ get_starred_repos ()
 }
 
 
-if [[ $(command -v exa) ]]; then
-    alias exa="eza -a --icons --git -h -g"
-    alias ls="eza"
-fi
-cdls ()
-{
-    cd "$@"
+chpwd() {
+  if [[ $(ls | wc -l) -ge 20 ]]; then
+    # print as grid
+    eza -G -a -F --icons --group-directories-first --git --color=always --ignore-glob=".DS_Store|__*"
+  else
+    # print as list and add left padding
+    eza -1 -a -F --icons --group-directories-first --git --color=always --ignore-glob=".DS_Store|__*" | sed 's/^/  /'
+  fi
 }
