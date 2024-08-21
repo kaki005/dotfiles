@@ -1,8 +1,4 @@
 source $HOME/.rye/env
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
 # Source global alias
 if [ -f /etc/profile.d/alias ]; then
 	source /etc/profile.d/alias
@@ -39,9 +35,6 @@ esac
 export LC_ALL='ja_JP.UTF-8'
 export LC_MESSAGES='ja_JP.UTF-8'
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 export LDFLAGS="-L/usr/local/opt/zlib/lib"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
@@ -71,6 +64,9 @@ GIT_PS1_SHOWUPSTREAM=auto
 eval "$(zoxide init bash)"
 # starshp
 eval "$(starship init bash)"
+# mise
+eval "$(mise activate bash)"
+
 
 # =====================
 # alias

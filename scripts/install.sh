@@ -8,4 +8,7 @@ if [ $(uname) = Darwin ]; then
     fi
     brew bundle install --global
 fi
-
+# Install mise dependencies
+if type mise > /dev/null 2>&1; then
+  mise install
+fi

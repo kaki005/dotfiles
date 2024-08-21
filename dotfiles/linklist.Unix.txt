@@ -20,3 +20,6 @@ nvim			${HOME}/.config/nvim
 #starship
 starship/starship.toml    ${HOME}/.config/starship.toml
 starship/fonts            ${HOME}/.local/share/fonts
+
+# mise
+mise/config.toml          ${HOME}/.config/mise/config.toml

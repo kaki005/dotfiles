@@ -31,5 +31,5 @@ autoload -Uz compinit && compinit
 fpath=($TOOL_DIR $fpath)
 autoload -Uz cd-gitroot
 
+eval "$(mise activate zsh)"
 eval "$(zoxide init zsh)"
-eval "$(pyenv init -)"
