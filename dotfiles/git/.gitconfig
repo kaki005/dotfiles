@@ -43,3 +43,22 @@
 	defaultBranch = main
 [pull]
   rebase = false
+
+
+# delta: diffに色を付ける
+[pager]
+    diff = delta
+    side-by-side = true # 横に並べる
+    log = delta
+    reflog = delta
+    show = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+  diff-so-fancy=true
+  keep-plus-minus-markers=true
+  minus-emph-style="bold 94 89"
+  plus-emph-style="bold 29 29"
+  hunk-header-style="omit"
+  line-numbers=true
+
