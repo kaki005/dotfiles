@@ -55,3 +55,6 @@ fi
 export HISTFILE="$HIST_DIR/.zsh-history"
 
 echo "zsh completed"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

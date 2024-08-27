@@ -7,6 +7,7 @@ if [ $(uname) = Darwin ]; then
         echo "Since Homebrew is already installed, skip this phase and proceed."
     fi
     brew bundle install --global
+    curl https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 fi
 # Install mise dependencies
 if type mise > /dev/null 2>&1; then
