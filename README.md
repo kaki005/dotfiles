@@ -1,5 +1,5 @@
 # dotfiles
-<img width="1918" alt="スクリーンショット 2024-08-28 0 57 52" src="https://github.com/user-attachments/assets/ac329c71-f8ca-4912-8382-23db02926556">
+<img width="1512" alt="スクリーンショット 2024-08-28 1 00 06" src="https://github.com/user-attachments/assets/6d9c0467-30f9-4220-ac09-7aa8ef4f70db">
 
 ## Usage
 ```
