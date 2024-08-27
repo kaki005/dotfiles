@@ -24,18 +24,25 @@
 [core]
     quotepath=false # 日本語ファイル名をエンコードしない
     editor = nvim
+    # You almost always want autocrlf=input unless you really know what you are doing.
+    autocrlf = input
 [push]
     default = current
     autoSetupRemote = true
+[help]
+autocorrect = 1
+
 [credential]
     helper=store
 [http]
     postBuffer=524288000
-[ghq]i
+[ghq]
   root = ~/Desktop
   root = ~/Documents
 [commit]
   verbose=true
+
+
 [color]
   ui = true
 [color "branch"]
@@ -48,13 +55,19 @@
   old = red
   new = green
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [pull]
   rebase = false
   ff = only
 
 
 # delta: diffに色を付ける
+[diff "bin"]
+  textconv = hexdump -v -C
+[difftool]
+  prompt = true
+  trustExitCode = true
+
 [pager]
     diff = delta
     side-by-side = true # 横に並べる
