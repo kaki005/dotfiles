@@ -25,3 +25,6 @@ starship/fonts            ${HOME}/.local/share/fonts
 
 # mise
 mise/config.toml          ${HOME}/.config/mise/config.toml
+
+# btop
+btop/btop.conf            ${HOME}/.config/btop/btop.conf
