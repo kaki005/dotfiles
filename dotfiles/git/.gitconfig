@@ -2,7 +2,7 @@
 	email = u097498f@ecs.osaka-u.ac.jp
 	name = kaki005
 [commit]
-	tamplate = $HOME/dotfiles/dotfiles/git/.commit_template
+	tamplate = $HOME/dotfiles/dotfiles/git/.ciommit_template
 [alias]
     st = status
 	# いい感じのグラフでログを表示
@@ -18,12 +18,20 @@
     changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
     short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
     simple = log --pretty=format:\" * %s\"
+    # エイリアス一覧表示
+    aliases = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort  
 
+[core]
+    quotepath=false # 日本語ファイル名をエンコードしない
+    editor = nvim
+[push]
+    default = current
+    autoSetupRemote = true
 [credential]
     helper=store
 [http]
     postBuffer=524288000
-[ghq]
+[ghq]i
   root = ~/Desktop
   root = ~/Documents
 [commit]
@@ -43,6 +51,7 @@
 	defaultBranch = main
 [pull]
   rebase = false
+  ff = only
 
 
 # delta: diffに色を付ける
