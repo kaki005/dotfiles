@@ -24,4 +24,5 @@ if [ "$(uname)" == 'Darwin' ]; then
     __ln ~/dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
     __ln ~/dotfiles/dotfiles/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json
     __ln ~/dotfiles/dotfiles/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+    __ln ~/dotfiles/dotfiles/iTerm/iTermProfile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/iTermProfile.json
 fi
