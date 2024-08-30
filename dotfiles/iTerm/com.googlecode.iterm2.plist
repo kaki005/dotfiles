@@ -1444,16 +1444,18 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10333251953125</real>
+				<real>0.0</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.10151717811822891</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.097886495292186737</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/skakio/dotfiles/dotfiles/iTerm/wallpaper2.jpg</string>
+			<key>Background Image Mode</key>
+			<integer>2</integer>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1493,6 +1495,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Blend</key>
+			<real>0.33101222826086957</real>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -2441,5 +2445,9 @@
 	<false/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
