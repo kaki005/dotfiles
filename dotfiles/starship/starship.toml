@@ -72,6 +72,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+[character]
 success_symbol = '[❯](bold #9ece6a)'
 error_symbol = '[❯](bold red)'
 
