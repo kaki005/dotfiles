@@ -1,7 +1,5 @@
 {
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true, // 貼り付け時にフォーマットするか。
-    "editor.formatOnType": false, // 入力時にフォーマットするか。
+    // ================== python ===================
     "[python]": {
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit",
@@ -9,32 +7,29 @@
         },
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
-    "autoDocstring.docstringFormat": "google",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-    "python.analysis.typeCheckingMode": "basic",
-    "files.autoSave": "onWindowChange",
-    "python.venvPath": "/Users/skakio/Library/Caches/pypoetry/virtualenvs",
-    "ruff.interpreter": [
-        "/Users/skakio/Library/Caches/pypoetry/virtualenvs"
-    ],
-    "ruff.organizeImports": false,
-    "ruff.format.args": [
-        "--config=pyproject.toml"
-    ],
-    // ------------------------------------------------
-    "window.zoomLevel": 1,
     "python.languageServer": "Pylance",
     "python.analysis.extraPaths": [
         "/home/yokoyama/target/path",
     ],
-    "workbench.iconTheme": "material-icon-theme",
-    "files.watcherExclude": { // 監視除外対象
-        "**": true
-    },
-    "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
+    "autoDocstring.docstringFormat": "google",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.venvPath": "${workspaceFolder}/.venv",
+    // ================== ruff ===================
+    "ruff.interpreter": [
+        "${workspaceFolder}/.venv"
+    ],
+    "ruff.organizeImports": true,
+    "ruff.format.args": [
+        "--config=pyproject.toml"
+    ],
+    // ================== debug ===================
     "debug.openDebug": "openOnSessionStart",
     "debug.inlineValues": "on",
-    "editor.bracketPairColorizativon.enabled": true,
+    // ================== editor ===================
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true, // 貼り付け時にフォーマットするか。
+    "editor.formatOnType": false, // 入力時にフォーマットするか。
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
@@ -52,8 +47,7 @@
     "editor.copyWithSyntaxHighlighting": false, // テキストのみコピー
     "editor.wordSegmenterLocales": "ja",
     "editor.wrappingIndent": "indent",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
+    // ================== files ===================
     "files.autoGuessEncoding": true,
     "files.exclude": { // 非表示ファイル
         "**/__pycache__": true,
@@ -77,27 +71,40 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true, // 終了時に空行削除
     "files.trimTrailingWhitespace": true, // 保存時に無駄な半角スペースを削除
+    "files.watcherExclude": { // 監視除外対象
+        "**": true
+    },
+    "files.autoSave": "onWindowChange",
+    // ================== scm ===================
     "scm.alwaysShowRepositories": true,
     "scm.defaultViewMode": "tree",
     "scm.diffDecorationsGutterWidth": 5,
     "scm.inputFontFamily": "editor",
     "scm.inputFontSize": 20,
     "search.showLineNumbers": true,
+    // ================== terminal ===================
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.enableImages": true,
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
+    // ================== workbench ===================
     "workbench.colorTheme": "Default High Contrast",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.wrapTabs": true,
     "workbench.list.smoothScrolling": true,
     "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.customLabels.patterns": {
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
     },
-    "git.openRepositoryInParentFolders": "always"
+    // ================== other ===================
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.openRepositoryInParentFolders": "always",
+    "window.zoomLevel": 1,
 }
