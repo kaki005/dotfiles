@@ -5,6 +5,12 @@
 # nf-pl-right_hard_divider
 # nf-ple-right_half_circle_thick
 
+
+# ==============================
+# global 
+# ==============================
+command_timeout = 3000
+scan_timeout=500
 # ==============================
 # format
 # ==============================
@@ -31,6 +37,9 @@ $python\
 
 right_format = """
 $cmd_duration
+$localip
+$aws
+$dotnet
 $lua
 $rust
 $python
@@ -108,7 +117,7 @@ disabled = false
 [time]
 disabled = false
 style = 'fg:#73daca'
-format = '[   $time]($style)' # nf-pl-right_soft_divider, nf-fa-clock_o
+format = '[   $time]($style) ' # nf-pl-right_soft_divider, nf-fa-clock_o
 time_format = '%T'
 utc_time_offset = '+9'
 
@@ -119,7 +128,7 @@ discharging_symbol = ' 💀'
 
 [[battery.display]]
 threshold = 80
-style = "bold dimmed yellow"
+style = "bold dimmed yellow "
 
 [memory_usage]
 disabled = false
@@ -129,8 +138,11 @@ format = "[$symbol$ram( $percentage%)]($style) "
 [cmd_duration]
 min_time = 1
 style = 'fg:#e0af68'
-format = "[   $duration]($style)" # nf-pl-right_soft_divider, nf-mdi-clock
-
+format = "[   $duration]($style) " # nf-pl-right_soft_divider, nf-mdi-clock
+[localip]
+ssh_only = false
+format = '@[$localipv4](bold red) '
+disabled = false
 # ==============================
 # git
 # ==============================
@@ -165,6 +177,9 @@ disabled = false
 # ==============================
 # Language
 # ==============================
+[dotnet]
+style = 'green'
+heuristic = false
 [conda]
 symbol = ' '                              # nf-dev-python
 style = 'fg:#9ece6a bg:#1a1b26'
