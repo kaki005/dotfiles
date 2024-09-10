@@ -68,7 +68,6 @@ alias now_="date '+%Y-%m-%d_%H%M%S'"
 # 改行区切りで表示
 alias printpath='echo $PATH | tr ":" "\n"'
 
-echo "alias load completed"
 
 
 # ====================
@@ -83,3 +82,14 @@ google() {
     local browser="Google Chrome"
     open $url -a $browser
 }
+if [[ "$(uname -r)" == *-microsoft-standard-WSL2 ]]; then
+  # WSL2のときの処理
+  echo "WSL2"
+
+  # Examples
+  alias finder="/mnt/c/Windows/explorer.exe"
+  alias code="'/mnt/c/Program Files/Microsoft VS Code/bin/code'"
+fi
+
+echo "$(uname -r)"
+echo "alias load completed"
