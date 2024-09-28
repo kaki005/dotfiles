@@ -37,6 +37,10 @@ alias grep="rg"
 alias dcom='docker-compose'
 alias dk='docker'
 alias finder='open .'
+
+alias k='kubectl'
+alias kgp='k get pods'
+alias kgd='k get deployment'
 # lsの結果を色付きで表示してくれる
 alias ls="eza --color=auto --icons"
 alias ll='eza -l--show-control-chars --color=auto --icons'
