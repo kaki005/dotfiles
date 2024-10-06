@@ -42,7 +42,6 @@ $aws
 $dotnet
 $lua
 $rust
-$python
 $haskell
 $c
 $time

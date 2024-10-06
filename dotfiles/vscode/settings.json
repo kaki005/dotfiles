@@ -8,16 +8,17 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "python.languageServer": "Pylance",
-    "python.analysis.extraPaths": [
-        "/home/yokoyama/target/path",
-    ],
     "autoDocstring.docstringFormat": "google",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-    "python.analysis.typeCheckingMode": "basic",
     "python.venvPath": "${workspaceFolder}/.venv",
+    "python.analysis.extraPaths": [
+        "./"
+    ], // import エラーを防ぐため
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
     // ================== ruff ===================
     "ruff.interpreter": [
-        "${workspaceFolder}/.venv"
+        "${workspaceFolder}/.venv/bin"
     ],
     "ruff.organizeImports": true,
     "ruff.format.args": [
