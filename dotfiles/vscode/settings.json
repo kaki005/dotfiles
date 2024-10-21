@@ -21,9 +21,8 @@
         "${workspaceFolder}/.venv/bin"
     ],
     "ruff.organizeImports": true,
-    "ruff.format.args": [
-        "--config=pyproject.toml"
-    ],
+    "ruff.configuration": "pyproject.toml",
+    "ruff.nativeServer": "on",
     // ================== debug ===================
     "debug.openDebug": "openOnSessionStart",
     "debug.inlineValues": "on",
@@ -58,6 +57,7 @@
         "**/data": true,
         "**.log": true,
         "**.npy": true,
+        "**/.mypy_cache": true,
         "requirements.lock": true,
         "requirements-dev.lock": true,
         ".python-version": true,
@@ -103,9 +103,32 @@
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
     },
+    // ================== gopls ===================
+    // https://github.com/golang/tools/blob/master/gopls/doc/settings.md
+    "gopls": {
+        // === Officially supported Settings ===
+        // This controls the information that appears in the hover text.
+        "hoverKind": "SynopsisDocumentation",
+        // If true, then completion responses may contain placeholders for function parameters or struct fields.
+        "usePlaceholders": true,
+        // This controls where points documentation for given package in `textDocument/documentLink`.
+        "linkTarget": "pkg.go.dev",
+        // === Experimental Settings ===
+        // If true, it enables the use of the staticcheck.io analyzers.
+        // Warning: This will significantly increase memory usage.
+        "staticcheck": false,
+        // If false, indicates that the user does not want documentation with completion results.
+        "completionDocumentation": true,
+        // If true, the completion engine is allowed to make suggestions for packages that you do not currently import.
+        "completeUnimported": true,
+        // If true, this turns on the ability to return completions from deep inside relevant entities, rather than just the locally accessible ones.
+        "deepCompletion": true
+    },
     // ================== other ===================
+    "go.useLanguageServer": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "git.openRepositoryInParentFolders": "always",
     "window.zoomLevel": 1,
+    "editor.accessibilitySupport": "off",
 }
