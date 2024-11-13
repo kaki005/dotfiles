@@ -770,6 +770,8 @@
 	<string>A620141D-783E-401B-8279-7F1711C47E60</string>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -1825,7 +1827,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-2</integer>
+			<integer>2</integer>
 			<key>Scrollback Lines</key>
 			<integer>100000</integer>
 			<key>Selected Text Color</key>
@@ -2118,6 +2120,10 @@
 		</dict>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
+	<false/>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
+	<key>OpenNoWindowsAtStartup</key>
 	<false/>
 	<key>PointerActions</key>
 	<dict>
