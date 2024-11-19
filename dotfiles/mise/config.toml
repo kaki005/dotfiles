@@ -1,6 +1,7 @@
 [tools]
-python = "3.12.3"
-java = "*"
+python = "latest"
+java = "latest"
 go = "latest"
 node = "lts"
-terraform = "*"
+terraform = "latest"
+
