@@ -5,3 +5,11 @@ go = "latest"
 node = "lts"
 terraform = "latest"
 
+[settings]
+experimental = true
+verbose = false
+
+[settings.status]
+show_env = true
+show_tools = true
+
