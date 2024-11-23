@@ -57,6 +57,7 @@
         "**/data": true,
         "**.log": true,
         "**.npy": true,
+        "outputs": true,
         "**/.mypy_cache": true,
         "requirements.lock": true,
         "requirements-dev.lock": true,
