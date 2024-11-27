@@ -2,8 +2,8 @@
     // ================== python ===================
     "[python]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit",
-            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit", // (デフォルトに設定されているもので)organizeImportsを実行。
+            "source.fixAll": "explicit", // (デフォルトに設定されているもので)fixAllを実行。
         },
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
@@ -18,10 +18,10 @@
     "python.analysis.autoImportCompletions": true,
     // ================== ruff ===================
     "ruff.interpreter": [
-        "${workspaceFolder}/.venv/bin"
-    ],
-    "ruff.organizeImports": true,
-    "ruff.configuration": "pyproject.toml",
+        "${workspaceFolder}/.venv/bin/python"
+    ], // ruffの通知を表示するか否か。
+    "ruff.organizeImports": false, // source.organizeImports を実行するのにruffを使用するか否か。
+    "ruff.configuration": "${workspaceFolder}/pyproject.toml",
     "ruff.nativeServer": "on",
     // ================== debug ===================
     "debug.openDebug": "openOnSessionStart",
