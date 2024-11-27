@@ -11,4 +11,7 @@ cd() {
   if [ -e  ".git" ]; then # git 管理されているなら
     git pull
   fi
+  if [ -e  ".venv" ]; then # python環境なら
+    rye sync
+  fi
 }
