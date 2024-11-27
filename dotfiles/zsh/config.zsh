@@ -6,7 +6,7 @@ SAVEHIST=1000000            # 上述のファイルに保存する履歴のサ�
 
 # share .zshhistory
 setopt inc_append_history   # 実行時に履歴をファイルにに追加していく
-setopt share_history        # 履歴を他のシェルとリアルタイム共有する
+# setopt share_history        # 履歴を他のシェルとリアルタイム共有する
 setopt hist_ignore_all_dups    # 同じコマンドをhistoryに残さない
 setopt hist_ignore_space       # historyに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks      # historyに保存するときに余分なスペースを削除する
