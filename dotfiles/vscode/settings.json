@@ -92,8 +92,6 @@
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
-    // ================== workbench ===================
-    "workbench.colorTheme": "Default High Contrast",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.wrapTabs": true,
