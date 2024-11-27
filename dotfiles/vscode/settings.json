@@ -130,4 +130,5 @@
     "git.openRepositoryInParentFolders": "always",
     "window.zoomLevel": 1,
     "editor.accessibilitySupport": "off",
+    "workbench.startupEditor": "none",
 }
