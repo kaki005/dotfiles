@@ -131,4 +131,6 @@
     "window.zoomLevel": 1,
     "editor.accessibilitySupport": "off",
     "workbench.startupEditor": "none",
+    "notebook.output.scrolling": true,
+    "notebook.output.textLineLimit": 50,
 }
