@@ -776,6 +776,8 @@
 	<true/>
 	<key>HideScrollbar</key>
 	<false/>
+	<key>HideTab</key>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
