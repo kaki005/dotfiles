@@ -26,7 +26,7 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include"
 export HIST_DIR="$HOME/.history"
 mkdir $HIST_DIR
 export HISTFILE="$HIST_DIR/.bash_history"
-
+export PYTHONSTARTUP="$DOTFILES_DIR/dotfiles/python/.pythonrc.py"
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
