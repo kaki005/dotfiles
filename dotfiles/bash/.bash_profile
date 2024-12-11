@@ -7,6 +7,7 @@ export PATH="$PATH:$HOME/homebrew/bin"
 export PAGER='/usr/bin/lv -c' # man とかで使われる
 export EDITOR='/usr/bin/vim' # visudo とかで使われる
 export HISTSIZE=100000 # これだけコマンド履歴を残す
+export SAVEHIST=1000000            # 上述のファイルに保存する履歴のサイズ
 
 export DOTFILES_DIR="$HOME/dotfiles"
 COMMAND_DIR="$DOTFILES_DIR/command"
@@ -27,6 +28,13 @@ export HIST_DIR="$HOME/.cache"
 mkdir $HIST_DIR
 export HISTFILE="$HIST_DIR/.bash_history"
 export PYTHONSTARTUP="$DOTFILES_DIR/dotfiles/python/.pythonrc.py"
+
+export MPLCONFIGDIR="$HOME/.cache/matplotlib" # matplotlibのフォントファイル
+export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
+export RYE_HOME="$HOME/.cache/rye"
+export NVM_DIR="$HOME/.cache/nvm"
+export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
+
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi

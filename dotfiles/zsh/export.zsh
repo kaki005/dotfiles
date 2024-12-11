@@ -6,3 +6,5 @@ export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
 export PYTHONSTARTUP="$DOTFILES_DIR/dotfiles/python/.pythonrc.py"
 export HISTSIZE=100000             # メモリ上に保存する履歴のサイズ
 export SAVEHIST=1000000            # 上述のファイルに保存する履歴のサイズ
+export MPLCONFIGDIR="$HOME/.cache/matplotlib" # matplotlibのフォントファイル
+export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
