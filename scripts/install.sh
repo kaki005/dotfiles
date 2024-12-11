@@ -13,3 +13,5 @@ fi
 if type mise > /dev/null 2>&1; then
   mise install
 fi
+# set cache directory
+npm config set cache $HOME/.cache/npm
