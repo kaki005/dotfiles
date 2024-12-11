@@ -27,7 +27,24 @@ TOOL_DIR=$SCRIPT_DIR/tool
 source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
 fpath=(~/zsh $fpath)
 zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
-autoload -Uz compinit && compinit
+
+# ==================
+# compinit
+# ==================
+autoload -Uz compinit
+ZCOMPCACHE="$HOME/.cache/zsh/zcompcache"
+# Create the parent directory if it doesn't exist
+[[ -d $ZCOMPCACHE ]] || mkdir -p $ZCOMPCACHE
+# Set the custom location for zcompdump files
+_comp_files=($ZCOMPCACHE(Nm-20))
+if (( $#_comp_files )); then
+    compinit -i -C -d "$ZCOMPCACHE/.zcompdump-${ZSH_VERSION}"
+else
+    compinit -i -d "$ZCOMPCACHE/.zcompdump-${ZSH_VERSION}"
+fi
+unset _comp_files # `unset` the temporary variable
+
+
 # cd-gitroot
 fpath=($TOOL_DIR $fpath)
 autoload -Uz cd-gitroot

@@ -23,7 +23,7 @@ export LDFLAGS="-L/usr/local/opt/zlib/lib"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
 
-export HIST_DIR="$HOME/.history"
+export HIST_DIR="$HOME/.cache"
 mkdir $HIST_DIR
 export HISTFILE="$HIST_DIR/.bash_history"
 export PYTHONSTARTUP="$DOTFILES_DIR/dotfiles/python/.pythonrc.py"
