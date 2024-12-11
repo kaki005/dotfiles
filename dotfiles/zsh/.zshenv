@@ -9,8 +9,8 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include"
 
 
 # Rye if exists
-if [[ -s "$HOME/.rye/env" ]]; then
-  . "$HOME/.rye/env"
+if [[ -s "$HOME.cache/rye/env" ]]; then
+  . "$HOME/cache/rye/env"
 fi
 
 
@@ -18,4 +18,3 @@ fi
 if [[ -s "$HOME/.cargo/" ]]; then
     . "$HOME/.cargo/env"
 fi
-ｓ
