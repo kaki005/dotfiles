@@ -1,6 +1,7 @@
 #command
 #line-edit
 #env
-LESSHISTFILE="$HIST_DIR/.lesshist"
+LESSHISTFILE="$HOME/.cache/.lesshist"
 LESS = -i -q -x2 -N -R
 LESSCHARSET = utf-8
+LESSOPEN = | highlight %s
