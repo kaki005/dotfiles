@@ -33,6 +33,7 @@ export MPLCONFIGDIR="$HOME/.cache/matplotlib" # matplotlibのフォントファ�
 export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
 export RYE_HOME="$HOME/.cache/rye"
 export NVM_DIR="$HOME/.cache/nvm"
+export GOPATH="$HOME/.local/share/go"
 export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
 
 if [ -f ~/.bashrc ]; then

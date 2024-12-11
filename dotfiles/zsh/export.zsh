@@ -8,3 +8,4 @@ export HISTSIZE=100000             # メモリ上に保存する履歴のサイ�
 export SAVEHIST=1000000            # 上述のファイルに保存する履歴のサイズ
 export MPLCONFIGDIR="$HOME/.cache/matplotlib" # matplotlibのフォントファイル
 export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
+export GOPATH="$HOME/.local/share/go"
