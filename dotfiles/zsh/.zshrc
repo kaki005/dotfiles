@@ -32,7 +32,6 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
-### End of Zinit's installer chunk
 
 
 #################################  others  #################################
@@ -48,13 +47,5 @@ source $SCRIPT_DIR/update-check.zsh
 source $SCRIPT_DIR/key-bind.zsh
 source $SCRIPT_DIR/plugin.zsh
 
-#################################  history  #################################
-if [[ ! -r "$HIST_DIR" ]] then
-    mkdir $HIST_DIR
-fi
-export HISTFILE="$HIST_DIR/.zsh-history"
-
 echo "zsh completed"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-

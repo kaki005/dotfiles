@@ -26,7 +26,7 @@ TOOL_DIR=$SCRIPT_DIR/tool
 #source $TOOL_DIR/p10k.zsh
 source $TOOL_DIR/git-prompt.sh  # git-promptの読み込み
 fpath=(~/zsh $fpath)
-zstyle ':completion:*:*:git:*' script $SCRIPT_DIR/tool/git-completion.bash # git-completionの読み込み
+zstyle ':completion:*:*:git:*' script $TOOL_DIR/git-completion.bash # git-completionの読み込み
 
 # ==================
 # compinit

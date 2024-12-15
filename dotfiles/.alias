@@ -83,16 +83,16 @@ cdls() {
 
 google() {
     local url="https://google.co.jp/search?q=${*// /+}"
-    local browser="Google Chrome"
+    local browser="Arc"
     open $url -a $browser
 }
-if [[ "$(uname -r)" == *-microsoft-standard-WSL2 ]]; then
-  # WSL2のときの処理
-  echo "WSL2"
 
-  # Examples
+
+# WSL2のときの処理
+if [[ "$(uname -r)" == *-microsoft-standard-WSL2 ]]; then
+  echo "WSL2"
+  # define alias for windows
   alias finder="/mnt/c/Windows/explorer.exe"
   alias code="'/mnt/c/Tool/Code/code.exe'"
 fi
-
 echo "alias load completed"

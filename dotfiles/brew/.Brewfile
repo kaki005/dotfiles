@@ -28,6 +28,8 @@ brew "peco"
 brew "pre-commit"
 brew "procs"
 brew "ripgrep"
+brew "unzip" # replace default package
+brew "nano"# replace default package
 brew "rye"
 brew "starship"
 brew "tldr"

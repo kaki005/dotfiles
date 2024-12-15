@@ -6,6 +6,8 @@ defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 55
 # Magnificate the Dock （Dock の拡大機能を入にする）
 defaults write com.apple.dock magnification -bool true
+# Bluetoothを切る
+defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
 
 
 # Automatically open a new Finder window when a volume is mounted
@@ -14,29 +16,29 @@ defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
+# ============
+# finder
+# ============
 # Set `${HOME}` as the default location for new Finder windows
 # 新しいウィンドウでデフォルトでホームフォルダを開く
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
-
+# 拡張子の変更を警告しない
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Show Status bar in Finder （ステータスバーを表示）
 defaults write com.apple.finder ShowStatusBar -bool true
-
 # Show Path bar in Finder （パスバーを表示）
 defaults write com.apple.finder ShowPathbar -bool true
-
 # Show Tab bar in Finder （タブバーを表示）
 defaults write com.apple.finder ShowTabView -bool true
-
 # Show the ~/Library directory （ライブラリディレクトリを表示、デフォルトは非表示）
 chflags nohidden ~/Library
-
 # Show the hidden files （不可視ファイルを表示）
 defaults write com.apple.finder AppleShowAllFiles YES
 
 # ============
 # trackpad
-# ===========
+# ============
 # Enable `Tap to click` （タップでクリックを有効にする）
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -48,6 +50,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
+# キーボード早め
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
 
 
 # =============
@@ -90,4 +95,3 @@ for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
         "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
         "/System/Library/CoreServices/Menu Extras/Volume.menu"
 done
-

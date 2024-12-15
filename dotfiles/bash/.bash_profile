@@ -25,7 +25,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
 
 export HIST_DIR="$HOME/.cache"
-mkdir $HIST_DIR
 export HISTFILE="$HIST_DIR/.bash_history"
 export PYTHONSTARTUP="$DOTFILES_DIR/dotfiles/python/.pythonrc.py"
 
@@ -36,9 +35,7 @@ export NVM_DIR="$HOME/.cache/nvm"
 export GOPATH="$HOME/.local/share/go"
 export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
 
-if [ -f ~/.bashrc ]; then
-        . ~/.bashrc
-fi
+
 # Source global alias
 if [ -f /etc/profile.d/alias ]; then
 	source /etc/profile.d/alias

@@ -24,14 +24,6 @@ zstyle ':completion:*' group-name ''
 ### select=2: 補完候補を一覧から選択する。補完候補が2つ以上なければすぐに補完する。
 zstyle ':completion:*:default' menu select=2
 
-#################################  Prompt(Obsolete)  #################################
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWUPSTREAM=auto
-# プロンプトの表示設定(好きなようにカスタマイズ可)
-#setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
-
 
 #################################  OTHERS  #################################
 # automatically change directory when dir name is typed
@@ -40,10 +32,8 @@ setopt auto_cd
 setopt AUTO_CD
 ## 環境変数を補完
 setopt AUTO_PARAM_KEYS
-
 # disable ctrl+s, ctrl+q
 setopt no_flow_control
-
 # コマンドのスペルを訂正
 setopt correct
 # ビープ音を鳴らさない
