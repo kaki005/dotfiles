@@ -64,10 +64,8 @@ alias ga='git add'
 alias pwd='pwd -P'
 # date
 alias dates='date "+%Y-%m-%d %T.%N"'
-alias today="date '+%Y%m%d'"
-alias today_="date '+%Y-%m-%d'"
-alias now="date '+%Y%m%d_%H%M%S'"
-alias now_="date '+%Y-%m-%d_%H%M%S'"
+alias today="date '+%Y/%m/%d'"
+alias now="date '+%Y-%m-%d_%H-%M-%S'"
 # PATH
 # 改行区切りで表示
 alias printpath='echo $PATH | tr ":" "\n"'
@@ -87,6 +85,13 @@ google() {
     open $url -a $browser
 }
 
+update(){
+  ghq list | ghq get --update --parallel
+  brew update
+  brew upgrade
+  rye self update
+  mise latest
+}
 
 # WSL2のときの処理
 if [[ "$(uname -r)" == *-microsoft-standard-WSL2 ]]; then
