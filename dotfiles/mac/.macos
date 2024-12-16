@@ -1,3 +1,6 @@
+# ============
+# Dock
+# ============
 # Automatically hide or show the Dock （Dock を自動的に隠す）
 defaults write com.apple.dock autohide -bool true
 # Wipe all app icons from the Dock （Dock に標準で入っている全てのアプリを消す、Finder とごみ箱は消えない）
@@ -6,22 +9,25 @@ defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 55
 # Magnificate the Dock （Dock の拡大機能を入にする）
 defaults write com.apple.dock magnification -bool true
-# Bluetoothを切る
-defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
+# hideまでの時間 (default 1)
+defaults write com.apple.dock autohide-time-modifier -float 2
+# 最近使ったアプリを表示しない
+defaults write com.apple.dock show-recents -bool false
 
-
+# ============
+# disk images
+# ============
 # Automatically open a new Finder window when a volume is mounted
 # マウントされたディスクがあったら、自動的に新しいウィンドウを開く
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # ============
 # finder
 # ============
 # Set `${HOME}` as the default location for new Finder windows
 # 新しいウィンドウでデフォルトでホームフォルダを開く
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTarget -string PfDe
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 # 拡張子の変更を警告しない
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
@@ -35,14 +41,20 @@ defaults write com.apple.finder ShowTabView -bool true
 chflags nohidden ~/Library
 # Show the hidden files （不可視ファイルを表示）
 defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
+# ============
+# NSGlobalDomain
+# ============
+# サイドバーのアイコンサイズ
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # ============
 # trackpad
 # ============
 # Enable `Tap to click` （タップでクリックを有効にする）
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Map bottom right Trackpad corner to right-click （右下をクリックで、副クリックに割り当てる）
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
@@ -50,12 +62,15 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
+# ============
+# Keyboard
+# ============
 # キーボード早め
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
 
 
-# =============
+# ============
 # ohters
 # ============
 # Avoid creating `.DS_Store` files on network volumes （ネットワークディスクで、`.DS_Store` ファイルを作らない）
@@ -81,13 +96,15 @@ defaults write com.apple.screencapture type -string "png"
 # Require password immediately after the computer went into
 # sleep or screen saver mode （スリープまたはスクリーンセーバから復帰した際、パスワードをすぐに要求する）
 defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
+defaults write com.apple.screensaver askForPasswordDelay -int 1
 
 # Expand save panel by default （保存パネルをデフォルトで開いた状態にする）
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 # Expand print panel by default （印刷パネルをデフォルトで開いた状態にする）
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+# Bluetoothを切る
+defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
 
 # Hide the Time Machine and Volume icons from the menu bar （メニューバーのTime Machine と音量アイコンを非表示にする）
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
