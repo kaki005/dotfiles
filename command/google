@@ -1,0 +1,3 @@
+    local url="https://google.co.jp/search?q=${*// /+}"
+    local browser="Arc"
+    open $url -a $browser

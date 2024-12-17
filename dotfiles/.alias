@@ -71,28 +71,6 @@ alias now="date '+%Y-%m-%d_%H-%M-%S'"
 alias printpath='echo $PATH | tr ":" "\n"'
 
 
-
-# ====================
-# コマンド
-# ===================
-cdls() {
-    cd "$@" && ls
-}
-
-google() {
-    local url="https://google.co.jp/search?q=${*// /+}"
-    local browser="Arc"
-    open $url -a $browser
-}
-
-update(){
-  ghq list | ghq get --update --parallel
-  brew update
-  brew upgrade
-  rye self update
-  mise latest
-}
-
 # WSL2のときの処理
 if [[ "$(uname -r)" == *-microsoft-standard-WSL2 ]]; then
   echo "WSL2"

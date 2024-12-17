@@ -1,3 +1,4 @@
+# add,commit,pushを一括で行います。
 git add .
 git commit -m "$1"
 echo "commit : $1"

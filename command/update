@@ -1,0 +1,6 @@
+  # 一括でupdate, upgradeを行います。
+  ghq list | ghq get --update --parallel
+  brew update
+  brew upgrade
+  rye self update
+  mise upgrade
