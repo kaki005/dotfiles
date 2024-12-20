@@ -1,8 +1,6 @@
 [user]
 	email = u097498f@ecs.osaka-u.ac.jp
 	name = kaki005
-[commit]
-	tamplate = $HOME/dotfiles/dotfiles/git/.ciommit_template
 [alias]
     st = status
     # add したあとにstatus
@@ -28,22 +26,9 @@
     editor = nvim
     # You almost always want autocrlf=input unless you really know what you are doing.
     autocrlf = input
-[push]
-    default = current
-    autoSetupRemote = true
-[help]
-autocorrect = 1
-
-[credential]
-    helper=store
-[http]
-    postBuffer=524288000
-[ghq]
-  root = ~/Documents/Git
-[commit]
-  verbose=true
 
 
+# color
 [color]
   ui = true
 [color "branch"]
@@ -55,12 +40,27 @@ autocorrect = 1
   frag = magenta bold
   old = red
   new = green
+
+
+
 [init]
   defaultBranch = main
 [pull]
   rebase = false
   ff = only
+[commit]
+  tamplate = $HOME/dotfiles/dotfiles/git/.ciommit_template
+  verbose=true
+[push]
+    default = current
+    autoSetupRemote = true
 
+# merge
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
 
 # delta: diffに色を付ける
 [diff "bin"]
@@ -84,3 +84,13 @@ autocorrect = 1
   plus-emph-style="bold 29 29"
   hunk-header-style="omit"
   line-numbers=true
+
+[help]
+autocorrect = 1
+
+[credential]
+    helper=store
+[http]
+    postBuffer=524288000
+[ghq]
+  root = ~/Documents/Git
