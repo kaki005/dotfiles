@@ -28,7 +28,7 @@ if [ -d "/Applications/iTerm.app" ]; then
   defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 fi
 
-if [ "$(uname)" == 'Darwin' ]; then
+if [ "$(uname)" = "Darwin" ]; then # macなら
     __ln ~/dotfiles/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
     __ln ~/dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
     __ln ~/dotfiles/dotfiles/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json
