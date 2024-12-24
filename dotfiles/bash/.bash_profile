@@ -35,6 +35,10 @@ export NVM_DIR="$HOME/.cache/nvm"
 export GOPATH="$HOME/.local/share/go"
 export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
 
+# Source bashrc
+if [ -f ~/.bashrc ]; then
+	source ~/.bashrc
+fi
 
 # Source global alias
 if [ -f /etc/profile.d/alias ]; then
