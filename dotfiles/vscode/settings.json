@@ -1,4 +1,6 @@
 {
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    "window.zoomLevel": 1,
     // ================== python ===================
     "[python]": {
         "editor.codeActionsOnSave": {
@@ -58,6 +60,7 @@
         "**.log": true,
         "**.npy": true,
         "outputs": true,
+        "build": true,
         "**/.mypy_cache": true,
         "requirements.lock": true,
         "requirements-dev.lock": true,
@@ -92,6 +95,7 @@
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
+    // ================== workbench =================
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.wrapTabs": true,
@@ -102,6 +106,12 @@
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
     },
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    // ================== explorer ===================
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.compactFolders": false,
     // ================== gopls ===================
     // https://github.com/golang/tools/blob/master/gopls/doc/settings.md
     "gopls": {
@@ -125,12 +135,8 @@
     },
     // ================== other ===================
     "go.useLanguageServer": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
     "git.openRepositoryInParentFolders": "always",
-    "window.zoomLevel": 1,
     "editor.accessibilitySupport": "off",
-    "workbench.startupEditor": "none",
     "notebook.output.scrolling": true,
     "notebook.output.textLineLimit": 50,
 }
