@@ -2,9 +2,9 @@
 peco_history_selection() {
   local selected_command=$(history | tac | awk '{$1=""; print substr($0,2)}' | peco)
   if [ -n "$selected_command" ]; then
-    READLINE_LINE="$selected_command" # 現在のコマンドラインを変更
-    READLINE_POINT=${#selected_command} # カーソル位置を変更
-    builtin eval "$READLINE_LINE"  # コマンドを即時実行
+    # READLINE_LINE="$selected_command" # 現在のコマンドラインを変更
+    # READLINE_POINT=${#selected_command} # カーソル位置を変更
+    builtin eval "$selected_command"  # コマンドを即時実行
   fi
 }
 bind -x '"\C-r": peco_history_selection' # Crl + r
@@ -17,9 +17,9 @@ peco_cdr() {
   fi
   local selected_dir=$(tac "$recent_dirs_file" | peco)
   if [ -n "$selected_dir" ]; then
-    READLINE_LINE="cd $selected_dir"
-    READLINE_POINT=${#READLINE_LINE}
-    builtin eval "$READLINE_LINE"  # コマンドを即時実行
+    # READLINE_LINE="cd $selected_dir"
+    # READLINE_POINT=${#READLINE_LINE}
+    builtin eval "cd $selected_dir"  # コマンドを即時実行
   fi
 }
 bind -x '"\C-q": peco_cdr'  # Crl + q
@@ -28,9 +28,9 @@ bind -x '"\C-q": peco_cdr'  # Crl + q
 find_cd() {
   local selected_dir=$(find . -type d | peco)
   if [ -n "$selected_dir" ]; then
-    READLINE_LINE="cd $selected_dir"
-    READLINE_POINT=${#READLINE_LINE}
-    builtin eval "$READLINE_LINE"  # コマンドを即時実行
+    # READLINE_LINE="cd $selected_dir"
+    # READLINE_POINT=${#READLINE_LINE}
+    builtin eval "cd $selected_dir"  # コマンドを即時実行
   fi
 }
 bind -x '"\C-w": find_cd'   # Crl + w
@@ -39,9 +39,9 @@ bind -x '"\C-w": find_cd'   # Crl + w
 peco_src() {
   local selected_dir=$(ghq list -p | peco --prompt="repositories >")
   if [ -n "$selected_dir" ]; then
-    READLINE_LINE="cd $selected_dir && git pull"
-    READLINE_POINT=${#READLINE_LINE}
-    builtin eval "$READLINE_LINE"  # コマンドを即時実行
+    # READLINE_LINE="cd $selected_dir && git pull"
+    # READLINE_POINT=${#READLINE_LINE}
+    builtin eval "cd $selected_dir && git pull"  # コマンドを即時実行
   fi
 }
 bind -x '"\C-]": peco_src'  # Crl + }
