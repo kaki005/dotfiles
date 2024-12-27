@@ -1,11 +1,11 @@
 # dotfiles
-<img width="1512" alt="スクリーンショット 2024-08-28 1 00 06" src="https://github.com/user-attachments/assets/6d9c0467-30f9-4220-ac09-7aa8ef4f70db">
+- 各種設定ファイルを管理します。
 
 ## Usage
 ```
 git clone https://github.com/kaki005/dotfiles.git
 dotfiles/scripts/link.sh
-dotfiles/scripts/install.sh 
+dotfiles/scripts/install.sh
 ```
 ## Keybinding
 - `Ctrl + Q`
@@ -16,17 +16,36 @@ dotfiles/scripts/install.sh
   - gitレポジトリへ移動
 - `Ctrl + W`
   - 小ディレクトリから選んで移動
-## Command
-- git-open [git](https://github.com/paulirish/git-open)
-  - 今いるレポジトリをブラウザで開きます。  
-- ghq
-  - gitレポジトリ管理に使います。
-- fd [git](https://github.com/sharkdp/fd)
-  - ファイル高速検索
-- bat
-  - catを文字に色を付けてくれる版
-- riggrep
-  - grepの高速版      
+
+## dotfiles description
+- bash, zsh
+  - シェル用の設定を管理します。
+- brew
+- iTerm
+- mac
+  - macの設定を保存します。
+- mise
+  - プログラミング言語や開発ツールのバージョンを管理します。
+- nvim
+  - 拡張可能なVimベースのテキストエディタです。
+- iTerm
+  - macOS用の無料のオープンソースターミナルエミュレータです。
+- python
+  - pythonコマンドライン起動時に実行されるスクリプトを管理します。
+- git
+ - gitの設定を保存します。
+- starship
+  - rust製のプロンプトです。
+- raycast
+  - Mac用のランチャーアプリで、アプリケーションの起動、ファイルの検索、スニペットの管理など、様々な機能をショートカットキー一つで素早く実行できるようにするツールです。
+- vscode
+  - vscodeの設定とkeybindを管理します。
+- wezterm
+  - Rust製のターミナルエミュレータです。(Winodows用)
+- cursor
+  - マウスのカーソルリソースを管理します。
+
+
 
 
 

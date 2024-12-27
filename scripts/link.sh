@@ -18,9 +18,9 @@ for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
     done
 done
 
+# itermがあれば　
 if [ -d "/Applications/iTerm.app" ]; then
-  dotfiles_echo "Setting up iTerm2 preferences..."
-
+  echo "Setting up iTerm2 preferences..."
   # Specify the preferences directory
   defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/dotfiles/dotfiles/iTerm"
 
@@ -28,7 +28,8 @@ if [ -d "/Applications/iTerm.app" ]; then
   defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 fi
 
-if [ "$(uname)" = "Darwin" ]; then # macなら
+# macなら
+if [ "$(uname)" = "Darwin" ]; then 
     __ln ~/dotfiles/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
     __ln ~/dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
     __ln ~/dotfiles/dotfiles/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json

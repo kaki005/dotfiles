@@ -1,2 +1,49 @@
 # .Brewfile
 - Brewコマンドの必要パッケージを管理します。
+
+
+## Command
+- git-open [git](https://github.com/paulirish/git-open)
+    - 今いるレポジトリをブラウザで開きます。
+- ghq [git](https://zenn.dev/oreo2990/articles/13c80cf34a95af)
+    - gitレポジトリ管理に使います。
+- fd [git](https://github.com/sharkdp/fd)
+    - ファイル高速検索
+- bat
+    - catを文字に色を付けてくれる版
+- btop
+    - topコマンドのリニューアル版
+- riggrep
+    - grepの高速版
+- duf
+    - dfコマンドのリニューアル版。
+- dust
+    - duコマンドのリニューアル版。ディスク使用量を直感的に表示。
+- eza
+    - lsコマンドのリニューアル版
+- hexyl
+    - カラフルな16進数viewerです。
+- rye
+    - pythonのバージョン管理コマンドです。
+- aria2
+    - wgetコマンドのリニューアル版です。
+- gping
+    - pingコマンドのリニューアル版です。
+- procs
+    - psコマンドのリニューアル版です。
+- zoxide
+    - cdコマンドのリニューアル版です。
+- tldr
+    - macコマンドのリニューアル版です。
+- bottom
+    - topコマンドのリニューアル版です。
+- git-delta
+    - gitのdiffの差分表示に使います。
+- mise
+    - プログラミング言語のバージョン管理に使います。
+- highlight
+    - 文字列を色付けします。
+- eigen
+    - C++の線形代数ライブラリです。
+- starship
+    - プロンプトに使います。

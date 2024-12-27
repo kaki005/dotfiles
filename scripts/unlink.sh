@@ -16,3 +16,11 @@ for linklist in "linklist.Unix.txt" "linklist.$(uname).txt"; do
         __unlink ${link}
     done
 done
+
+# macなら
+if [ "$(uname)" = "Darwin" ]; then 
+    __unlink ~/dotfiles/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+    __unlink ~/dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+    __unlink ~/dotfiles/dotfiles/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json
+    __unlink ~/dotfiles/dotfiles/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+fi
