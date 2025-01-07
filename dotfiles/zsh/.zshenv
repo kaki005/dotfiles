@@ -1,11 +1,12 @@
 export DOTFILES_DIR="$HOME/dotfiles"
 export LANG=ja_JP.UTF-8
 # ***************** PATH ************************
+# export PATH="/usr/local/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 COMMAND_DIR="$DOTFILES_DIR/command"
 export PATH=$COMMAND_DIR:$PATH
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export CPPFLAGS="-I/usr/local/opt/zlib/include:$CPPFLAGS"
 
 
 # Rye if exists
