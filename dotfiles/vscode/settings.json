@@ -139,4 +139,8 @@
     "editor.accessibilitySupport": "off",
     "notebook.output.scrolling": true,
     "notebook.output.textLineLimit": 50,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
 }

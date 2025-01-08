@@ -9,3 +9,9 @@ export SAVEHIST=1000000            # 上述のファイルに保存する履歴�
 export MPLCONFIGDIR="$HOME/.cache/matplotlib" # matplotlibのフォントファイル
 export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
 export GOPATH="$HOME/.local/share/go"
+
+# ****************** C /C++ ********************
+export MPIPATH="/usr/local/opt/open-mpi"
+export C_INCLUDE_PATH="$MPIPATH/include:$C_INCLUDE_PATH"
+export CPLUS_INCLUDE_PATH="$MPIPATH/include:$CPLUS_INCLUDE_PATH"
+export LIBRARY_PATH="$MPIPATH/lib:$LIBRARY_PATH"
