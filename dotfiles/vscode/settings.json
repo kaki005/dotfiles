@@ -25,6 +25,11 @@
     "ruff.organizeImports": false, // source.organizeImports を実行するのにruffを使用するか否か。
     "ruff.configuration": "${workspaceFolder}/pyproject.toml",
     "ruff.nativeServer": "on",
+    // ================== C/C++ ===================
+    "C_Cpp.clang_format_style": "{ColumnLimit: 140, IndentWidth: 4}",
+    "[cpp]": {
+        "editor.tabSize": 4,
+    },
     // ================== debug ===================
     "debug.openDebug": "openOnSessionStart",
     "debug.inlineValues": "on",
@@ -38,7 +43,7 @@
     "editor.dragAndDrop": false,
     "editor.fontFamily": "'Moralerspace Neon HWNF', Consolas, 'Courier New', monospace",
     "editor.guides.bracketPairs": true,
-    "editor.minimap.maxColumn": 80,
+    "editor.minimap.maxColumn": 8100,
     "editor.minimap.showSlider": "always",
     "editor.mouseWheelZoom": true,
     "editor.renderLineHighlight": "all",
