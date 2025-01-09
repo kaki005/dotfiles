@@ -43,9 +43,9 @@ SCRIPT_DIR=$DOTFILES_DIR/dotfiles/zsh
 TOOL_DIR=$SCRIPT_DIR/tool
 source $SCRIPT_DIR/config.zsh
 source $SCRIPT_DIR/command.zsh
-source $SCRIPT_DIR/update-check.zsh
 source $SCRIPT_DIR/key-bind.zsh
 source $SCRIPT_DIR/plugin.zsh
-
 echo "zsh completed"
+
+dotfile_check
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

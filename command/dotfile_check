@@ -1,0 +1,7 @@
+# シェル起動時にdotfilesの変更有無を調べ、変更されていればpushを促します。
+if test -n "$(git -C ${DOTFILES_DIR} status --porcelain)" || ! git -C ${DOTFILES_DIR} diff --exit-code --stat --cached origin/main > /dev/null ; then
+  printf "\e[36m=== DOTFILES IS DIRTY ===\e[m\n"
+  printf "\e[33mThe dotfiles have been changed.\e[m\n"
+  printf "\e[33mPlease update.\e[m\n"
+  printf "\e[36m=========================\e[m\n"
+fi

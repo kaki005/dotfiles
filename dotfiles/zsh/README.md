@@ -26,8 +26,6 @@
 ### command.zsh
 - zsh専用のコマンドを定義します。
 - zsh,bash両用のコマンドは.aliasで定義しています。
-### update-check.zsh
-- シェル起動時にdotfilesの変更有無を調べ、変更されていればpushを促します。
 
 ## シェルの種類
 - ログインシェル

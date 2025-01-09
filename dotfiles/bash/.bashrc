@@ -8,3 +8,5 @@ source $BASH_ROOTDIR/config.bash
 source $BASH_ROOTDIR/command.bash
 source $BASH_ROOTDIR/keybind.bash
 echo ".bashrc load complated"
+
+dotfile_check
