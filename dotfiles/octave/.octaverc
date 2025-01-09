@@ -1,0 +1,15 @@
+# 軸の目盛り
+set(0,'defaultAxesFontSize',14);
+set(0,'defaultAxesFontName','Times');
+# タイトル等
+set(0,'defaultTextFontSize',18);
+set(0,'defaultTextFontName','Times');
+# 線幅
+set(0,'defaultLineLineWidth',3);
+
+
+PS1('\[\e[40m\][\t] \w\n\s:\#>> '); # プロンプト設定
+edit mode sync  # Octaveが外部エディタを呼び出すと、編集が終了するまでOctaveの操作が待機
+edit home . # 編集用の一時ディレクトリを設定します。
+EDITOR('vim > /dev/tty 2>&1 < /dev/tty %s') # vim をエディタとして使用
+clc;    # コマンドウィンドウをクリアします。
