@@ -15,3 +15,9 @@ if type mise > /dev/null 2>&1; then
 fi
 # set cache directory
 npm config set cache $HOME/.cache/npm
+
+
+cat ~/dotfiles/dotfiles/vscode/extensions.txt | while read line
+do
+ code --install-extension $line
+done
