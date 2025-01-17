@@ -6,6 +6,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 COMMAND_DIR="$DOTFILES_DIR/command"
 export PATH=$COMMAND_DIR:$PATH
+export PATH="/Users/skakio/.local/share/mise/shims:$PATH"
 # ****************** C /C++ ********************
 export CPPFLAGS="-I/usr/local/opt/zlib/include:$CPPFLAGS"
 

@@ -1,6 +1,9 @@
   # 一括でupdate, upgradeを行います。
   ghq list | ghq get --update --parallel
+  git -C ~/dotfiles pull
+  brew bundle --global # install new package from ~/.Brewfile
   brew update
   brew upgrade
   rye self update
+  mise install
   mise upgrade

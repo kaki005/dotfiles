@@ -61,7 +61,6 @@
         "**/.ruff_cache": true,
         "**/.venv": true,
         "**/plot": true,
-        "**/data": true,
         "**.log": true,
         "**.npy": true,
         "outputs": true,
