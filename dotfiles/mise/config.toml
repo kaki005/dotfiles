@@ -1,9 +1,10 @@
 [tools]
-python = "latest"
+python = ["latest", "3.10"]
 java = "latest"
 go = "latest"
 node = "lts"
 terraform = "latest"
+uv="latest"
 
 [settings]
 experimental = true
@@ -12,4 +13,5 @@ verbose = false
 [settings.status]
 show_env = true
 show_tools = true
+
 
