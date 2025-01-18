@@ -30,6 +30,14 @@
     "[cpp]": {
         "editor.tabSize": 4,
     },
+    // ================== Rust ===================
+    "rust-analyzer.server.extraEnv": {
+        "RUSTC": "${env:HOME}/.local/share/mise/installs/rust/latest/bin/rustc",
+        "CARGO": "${env:HOME}/.local/share/mise/installs/rust/latest/bin/cargo",
+        "RUSTFMT": "${env:HOME}/.local/share/mise/installs/rust/latest/bin/rustfmt",
+        "RUSTUP_TOOLCHAIN": "stable"
+    },
+    // "rust-analyzer.cargo.sysroot": "${env:HOME}/.local/share/mise/installs/rust/latest/toolchains/stable-aarch64-apple-darwin",
     // ================== debug ===================
     "debug.openDebug": "openOnSessionStart",
     "debug.inlineValues": "on",

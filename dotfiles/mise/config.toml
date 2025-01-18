@@ -5,6 +5,7 @@ go = "latest"
 node = "lts"
 terraform = "latest"
 uv="latest"
+rust = "latest"
 
 [settings]
 experimental = true
