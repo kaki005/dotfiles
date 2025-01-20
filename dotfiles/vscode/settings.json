@@ -26,7 +26,7 @@
     "ruff.configuration": "${workspaceFolder}/pyproject.toml",
     "ruff.nativeServer": "on",
     // ================== C/C++ ===================
-    "C_Cpp.clang_format_style": "{ColumnLimit: 140, IndentWidth: 4}",
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, NamespaceIndentation: All, ColumnLimit: 140, IndentWidth: 4, IndentPragmas: True}",
     "[cpp]": {
         "editor.tabSize": 4,
     },
@@ -106,20 +106,28 @@
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.cwd": "/Users/skakio/Desktop/Git",
+    "terminal.integrated.cwd": "${env:HOME}/Documents/Git/github.com",
     // ================== workbench =================
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.wrapTabs": true,
     "workbench.list.smoothScrolling": true,
     "workbench.view.alwaysShowHeaderActions": true,
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.customLabels.patterns": {
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
     },
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#d06293", //pink
+        "editorBracketHighlight.foreground2": "#f3cb76", //yellow
+        "editorBracketHighlight.foreground3": "#5081eb", //blue
+        "editorBracketHighlight.foreground4": "#5be7a1", //green
+        "editorBracketHighlight.foreground5": "#a908f3", //purple
+        "editorBracketHighlight.foreground6": "#e1510e", //orange
+    },
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
+    "workbench.iconTheme": "catppuccin-mocha", //プロダクトアイコンテーマ
     // ================== explorer ===================
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -155,4 +163,5 @@
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
     ],
+    "cmake.options.statusBarVisibility": "icon",
 }
