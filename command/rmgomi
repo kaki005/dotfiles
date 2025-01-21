@@ -1,0 +1,2 @@
+# 配下の.DS_Storeと._xxx を削除
+find . \( -name '.DS_Store' -or -name '._*' \) -delete -print;
