@@ -42,7 +42,7 @@ chflags nohidden ~/Library
 # Show the hidden files （不可視ファイルを表示）
 defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
-
+defaults write com.apple.desktopservices DSDontWriteNetworkStores True # DSStoreを作らない
 # ============
 # NSGlobalDomain
 # ============
