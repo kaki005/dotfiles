@@ -31,6 +31,7 @@ alias ping="gping"
 alias python='python3'
 alias rr='rye run'
 alias rp='rye run python'
+alias ur="uv run"
 alias sb='source $HOME/.bashrc'
 alias sz="source ~/.zshrc"
 alias grep="rg"

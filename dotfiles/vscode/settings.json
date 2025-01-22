@@ -164,4 +164,5 @@
         "workbench.action.tasks.runTask"
     ],
     "cmake.options.statusBarVisibility": "icon",
+    "makefile.configureOnOpen": true,
 }

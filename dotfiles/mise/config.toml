@@ -1,11 +1,14 @@
 [tools]
-python = ["latest", "3.10"]
+haskell = "9.12.1"
+python = ["latest", "3.10", "3.12"]
 java = "latest"
 go = "latest"
 node = "lts"
 terraform = "latest"
 uv="latest"
+npm="latest"
 rust = "latest"
+clojure="latest"
 
 [settings]
 experimental = true

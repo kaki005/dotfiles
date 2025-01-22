@@ -135,4 +135,4 @@ if has('persistent_undo')
 endif
 
 
-set viminfo+=n'$HIST_DIR/.viminfo'
+set viminfo="$HOME/.cache/.viminfo"
