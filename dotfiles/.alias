@@ -45,8 +45,8 @@ alias kgp='k get pods'
 alias kgd='k get deployment'
 # lsの結果を色付きで表示してくれる
 alias ls="eza --color=auto --icons"
-alias ll='eza -l--show-control-chars --color=auto --icons'
-alias la='eza -la --icons'
+alias ll='eza -l --show-control-chars --color=auto --icons --header --git'
+alias la='eza -la --icons --header --git'
 # ○○するときに、本当に○○していいか聞いてくれる系のエイリアス
 alias rm='rm -i'
 alias mv='mv -i'
