@@ -1,6 +1,6 @@
 [tools]
 haskell = "9.12.1"
-python = ["latest", "3.10", "3.12"]
+python = ["latest", "3.10", "3.12", "3.13.1t"]
 java = "latest"
 go = "latest"
 node = "lts"

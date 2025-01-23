@@ -127,7 +127,8 @@
     },
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.iconTheme": "catppuccin-mocha", //プロダクトアイコンテーマ
+    "workbench.iconTheme": "catppuccin-mocha", //ファイルアイコンテーマ
+    "workbench.productIconTheme": "fluent-icons", //プロダクトアイコンテーマ
     // ================== explorer ===================
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -165,4 +166,11 @@
     ],
     "cmake.options.statusBarVisibility": "icon",
     "makefile.configureOnOpen": true,
+    "cSpell.userWords": [
+        "gensim",
+        "kargs",
+        "Multinomial",
+        "ngrams",
+        "Pachinko"
+    ],
 }
