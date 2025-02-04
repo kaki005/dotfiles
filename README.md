@@ -2,11 +2,18 @@
 - 各種設定ファイルを管理します。
 
 ## Usage
+### linux,macの場合
 ```
 git clone https://github.com/kaki005/dotfiles.git
 dotfiles/scripts/link.sh
 dotfiles/scripts/install.sh
 ```
+### windowsの場合
+- homeディレクトリにクローンして、PowerShellを管理者権限で開き、以下を実行します。
+```
+PowerShell -ExecutionPolicy Bypass $HOME\dotfiles\scripts\link.ps1
+```
+
 ## Keybinding
 - `Ctrl + Q`
   - 過去に移動したDirectoryを選んで移動
