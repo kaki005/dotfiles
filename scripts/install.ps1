@@ -6,3 +6,4 @@ winget install --id SlackTechnologies.Slack
 winget install --id XPFCC4CD725961
 winget install --id=eza-community.eza  -e
 winget install --id=ajeetdsouza.zoxide  -e
+winget install --id=chrisant996.Clink  -e

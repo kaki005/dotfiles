@@ -1,0 +1,13 @@
+clear=cls
+cp=copy $*
+rm=del $*
+mkdir=md $*
+ll=dir $*
+ls=dir /b $*
+grep=findstr $*
+np=notepad $*
+cat=type $1
+touch=type nul > $1
+cd~=cd %HOMEPATH%
+which=where $*
+aliases=type %LOCALAPPDATA%\clink\aliases
