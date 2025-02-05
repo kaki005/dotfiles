@@ -1,2 +1,3 @@
 history.shared = True
 clink.logo = short
+clink-reload = True
