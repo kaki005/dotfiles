@@ -4,3 +4,5 @@ winget install --id Google.Chrome
 winget install --id GIMP.GIM
 winget install --id SlackTechnologies.Slack
 winget install --id XPFCC4CD725961
+winget install --id=eza-community.eza  -e
+winget install --id=ajeetdsouza.zoxide  -e
