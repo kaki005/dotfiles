@@ -36,6 +36,10 @@ export NVM_DIR="$HOME/.cache/nvm"
 export GOPATH="$HOME/.local/share/go"
 export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
 
+if uname -r | grep -qi microsoft; then
+    export WINHOME="/mnt/c/Users/$(wslvar USERNAME)"
+fi
+
 # Source bashrc
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc

@@ -17,3 +17,7 @@ export MPIPATH="/usr/local/opt/open-mpi"
 export C_INCLUDE_PATH="$MPIPATH/include:$C_INCLUDE_PATH"
 export CPLUS_INCLUDE_PATH="$MPIPATH/include:$CPLUS_INCLUDE_PATH"
 export LIBRARY_PATH="$MPIPATH/lib:$LIBRARY_PATH"
+
+if uname -r | grep -qi microsoft; then
+    export WINHOME="/mnt/c/Users/$(wslvar USERNAME)"
+fi
