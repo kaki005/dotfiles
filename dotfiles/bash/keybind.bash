@@ -7,7 +7,7 @@ peco_history_selection() {
     builtin eval "$selected_command"  # コマンドを即時実行
   fi
 }
-bind -x '"\C-r": peco_history_selection' # Crl + r
+bind -x '"\C-r": peco_history_selection; kill -INT $$' # Crl + r
 
 # コマンド履歴からディレクトリ検索・移動
 peco_cdr() {
@@ -22,7 +22,7 @@ peco_cdr() {
     builtin eval "cd $selected_dir"  # コマンドを即時実行
   fi
 }
-bind -x '"\C-q": peco_cdr'  # Crl + q
+bind -x '"\C-q": peco_cdr; kill -INT $$'  # Crl + q
 
 # カレントディレクトリ以下のディレクトリ検索・移動
 find_cd() {
@@ -33,15 +33,15 @@ find_cd() {
     builtin eval "cd $selected_dir"  # コマンドを即時実行
   fi
 }
-bind -x '"\C-w": find_cd'   # Crl + w
+bind -x '"\C-w": find_cd; kill -INT $$'   # Crl + w
 
 # ghqとの連携。repositoryを選んで移動
 peco_src() {
   local selected_dir=$(ghq list -p | peco --prompt="repositories >")
   if [ -n "$selected_dir" ]; then
-    # READLINE_LINE="cd $selected_dir && git pull"
+    # READLINE_LINE="cd $selected_dir"
     # READLINE_POINT=${#READLINE_LINE}
-    builtin eval "cd $selected_dir && git pull"  # コマンドを即時実行
+    builtin eval "cd $selected_dir"  # コマンドを即時実行
   fi
 }
-bind -x '"\C-]": peco_src'  # Crl + }
+bind -x '"\C-]": peco_src; kill -INT $$'  # Crl + } killを入れることでプロンプトを自動更新CD
