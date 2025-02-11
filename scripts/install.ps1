@@ -7,3 +7,5 @@ winget install --id XPFCC4CD725961
 winget install --id=eza-community.eza  -e
 winget install --id=ajeetdsouza.zoxide  -e
 winget install --id=chrisant996.Clink  -e
+winget install --id Microsoft.PowerToys --source winget
+winget install --id=CubeSoft.CubeICE  -e
