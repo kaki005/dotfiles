@@ -9,3 +9,5 @@ winget install --id=ajeetdsouza.zoxide  -e
 winget install --id=chrisant996.Clink  -e
 winget install --id Microsoft.PowerToys --source winget
 winget install --id=CubeSoft.CubeICE  -e
+winget install jdx.mise
+winget install vscode
