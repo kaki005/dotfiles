@@ -62,6 +62,13 @@
     "editor.copyWithSyntaxHighlighting": false, // テキストのみコピー
     "editor.wordSegmenterLocales": "ja",
     "editor.wrappingIndent": "indent",
+    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
+    "explicitFolding.rules": {
+        "*": {
+            "begin": "##region",
+            "end": "##endregion"
+        }
+    },
     // ================== files ===================
     "files.autoGuessEncoding": true,
     "files.exclude": { // 非表示ファイル
@@ -173,4 +180,11 @@
         "ngrams",
         "Pachinko"
     ],
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
 }
