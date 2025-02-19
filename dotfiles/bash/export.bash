@@ -10,7 +10,11 @@ export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
 export RYE_HOME="$HOME/.cache/rye"
 export NVM_DIR="$HOME/.cache/nvm"
 export GOPATH="$HOME/.local/share/go"
-export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
+#export LESSKEY=${DOTFILES_DIR}/dotfiles/less/lesskey
+export LESSHISTFILE="$HOME/.cache/.lesshist"
+export LESS="-i -q -x2 -N -R"
+export LESSCHARSET="utf-8"
+export LESSOPEN="| highlight %s"
 
 if uname -r | grep -qi microsoft; then
     export WINHOME="/mnt/c/Users/$(wslvar USERNAME)"
