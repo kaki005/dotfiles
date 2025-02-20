@@ -5,6 +5,7 @@
 export PATH=$PATH:/sbin:/usr/sbin # パス
 export PATH="$PATH:$HOME/homebrew/bin"
 export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
+export PATH=$HOME/.local/share/mise/installs/julia/latest/bin:$PATH
 export PAGER='/usr/bin/lv -c' # man とかで使われる
 export EDITOR='/usr/bin/vim' # visudo とかで使われる
 export HISTSIZE=100000 # これだけコマンド履歴を残す

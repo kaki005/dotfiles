@@ -9,7 +9,7 @@ uv="latest"
 npm="latest"
 rust = "latest"
 clojure="latest"
-
+julia = "latest"
 [settings]
 experimental = true
 verbose = false
@@ -18,4 +18,5 @@ verbose = false
 show_env = true
 show_tools = true
 
-
+[alias]
+julia ="https://github.com/mise-plugins/mise-julia"

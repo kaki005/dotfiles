@@ -7,6 +7,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 COMMAND_DIR="$DOTFILES_DIR/command"
 export PATH=$COMMAND_DIR:$PATH
 export PATH="/Users/skakio/.local/share/mise/shims:$PATH"
+export PATH=$HOME/.local/share/mise/installs/julia/latest/bin:$PATH
 # ****************** C /C++ ********************
 export CPPFLAGS="-I/usr/local/opt/zlib/include:$CPPFLAGS"
 
