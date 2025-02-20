@@ -187,4 +187,5 @@
         "language-julia.interrupt"
     ],
     "julia.symbolCacheDownload": true,
+    "workbench.colorTheme": "Catppuccin Macchiato",
 }
