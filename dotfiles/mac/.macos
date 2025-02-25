@@ -31,6 +31,8 @@ defaults write com.apple.finder NewWindowTarget -string PfDe
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 # 拡張子の変更を警告しない
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+# ゴミ箱を空にする前の警告の無効化
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Show Status bar in Finder （ステータスバーを表示）
 defaults write com.apple.finder ShowStatusBar -bool true
 # Show Path bar in Finder （パスバーを表示）
@@ -71,6 +73,14 @@ defaults write -g InitialKeyRepeat -int 15
 
 
 # ============
+# LaunchServices
+# ============
+## 未確認のアプリケーションを実行する際のダイアログを無効にする
+defaults write com.apple.LaunchServices LSQuarantine -bool false 
+## ダウンロードしたファイルを開くときの警告ダイアログをなくしたい
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# ============
 # ohters
 # ============
 # Avoid creating `.DS_Store` files on network volumes （ネットワークディスクで、`.DS_Store` ファイルを作らない）
@@ -81,10 +91,6 @@ defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 
 # Date options: Show the day of the week: on （日付表示設定、曜日を表示）
 defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE H:mm'
-
-# Disable the "Are you sure you want to open this application?" dialog
-# 未確認のアプリケーションを実行する際のダイアログを無効にする
-defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Automatically quit the printer app once the print jobs are completed
 # 印刷が終了したら、自動的にプリンターアプリを終了する
