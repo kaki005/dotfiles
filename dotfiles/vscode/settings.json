@@ -83,7 +83,7 @@
         "**/.mypy_cache": true,
         "requirements.lock": true,
         "requirements-dev.lock": true,
-        ".python-version": true,
+        // ".python-version": true,
         "LICENSE": true,
     },
     "files.eol": "\n", // 改行記号
