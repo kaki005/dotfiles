@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 brew "aria2"
 brew "btop"
+brew "broot"
 brew "bottom"
 brew "pycparser"
 brew "cffi"

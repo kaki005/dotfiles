@@ -36,3 +36,5 @@ fi
 if [ -f /etc/profile.d/alias ]; then
 	source /etc/profile.d/alias
 fi
+
+source /Users/kakiosatsukokorozashi/.config/broot/launcher/bash/br
