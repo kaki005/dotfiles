@@ -166,7 +166,7 @@
     "git.openRepositoryInParentFolders": "always",
     "editor.accessibilitySupport": "off",
     "notebook.output.scrolling": true,
-    "notebook.output.textLineLimit": 50,
+    "notebook.output.textLineLimit": 80,
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
@@ -187,5 +187,4 @@
         "language-julia.interrupt"
     ],
     "julia.symbolCacheDownload": true,
-    "workbench.colorTheme": "Catppuccin Macchiato",
 }
