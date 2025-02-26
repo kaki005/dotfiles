@@ -1,0 +1,3 @@
+[submodule "dotfiles/eza-themes"]
+	path = dotfiles/eza-themes
+	url = https://github.com/eza-community/eza-themes.git
