@@ -166,7 +166,7 @@
     "git.openRepositoryInParentFolders": "always",
     "editor.accessibilitySupport": "off",
     "notebook.output.scrolling": true,
-    "notebook.output.textLineLimit": 80,
+    "notebook.output.textLineLimit": 100,
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
