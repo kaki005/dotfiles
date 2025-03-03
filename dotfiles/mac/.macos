@@ -76,9 +76,17 @@ defaults write -g InitialKeyRepeat -int 15
 # LaunchServices
 # ============
 ## 未確認のアプリケーションを実行する際のダイアログを無効にする
-defaults write com.apple.LaunchServices LSQuarantine -bool false 
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 ## ダウンロードしたファイルを開くときの警告ダイアログをなくしたい
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# ============
+# Terminal & iTerm 2
+# ============
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # ============
 # ohters

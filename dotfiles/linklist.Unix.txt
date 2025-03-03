@@ -35,3 +35,6 @@ octave/.octaverc        ${HOME}/.octaverc
 
 # eza
 eza-themes/themes/catppuccin.yml  ${HOME}/.config/eza/theme.yml
+
+# editorconfig
+.editorconfig     ${HOME}/.editorconfig
