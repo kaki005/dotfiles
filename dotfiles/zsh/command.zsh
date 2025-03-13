@@ -12,6 +12,6 @@ chpwd() {
     git pull
   fi
   if [ -e  ".venv" ]; then # python環境なら
-    rye sync
+    uv sync
   fi
 }

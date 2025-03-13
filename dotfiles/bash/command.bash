@@ -12,6 +12,6 @@ cd() {
     git pull
   fi
   if [ -d  ".venv" ]; then # python環境なら
-    rye sync
+    uv sync
   fi
 }
