@@ -38,3 +38,4 @@ eza-themes/themes/catppuccin.yml  ${HOME}/.config/eza/theme.yml
 
 # editorconfig
 .editorconfig     ${HOME}/.editorconfig
+

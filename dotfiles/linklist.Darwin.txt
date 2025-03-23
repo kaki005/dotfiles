@@ -1,2 +1,4 @@
 mac/.macos                            ${HOME}/.macos
 brew/.Brewfile                        ${HOME}/.Brewfile
+sketchybar                            ${HOME}/.config/sketchybar
+bordersrc                             ${HOME}/.config/borders/bordersrc

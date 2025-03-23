@@ -7,7 +7,7 @@
 
 
 # ==============================
-# global 
+# global
 # ==============================
 command_timeout = 3000
 scan_timeout=500
@@ -46,7 +46,7 @@ $haskell
 $c
 $time
 $battery
-$memory_usage  
+$memory_usage 
 """
 [fill]
 symbol = '─'
