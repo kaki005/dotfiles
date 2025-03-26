@@ -4,6 +4,8 @@
 <dict>
 	<key>AlternateMouseScroll</key>
 	<true/>
+	<key>ColoredSelectedTabOutlineStrength</key>
+	<real>2</real>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>catppuccin-mocha</key>
@@ -2922,7 +2924,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>15</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/skakio</string>
 		</dict>
