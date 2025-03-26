@@ -21,3 +21,7 @@ fi
 if [[ -s "$HOME/.cargo/" ]]; then
     . "$HOME/.cargo/env"
 fi
+
+
+
+echo ".zshenv loaded"

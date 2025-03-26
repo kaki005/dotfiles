@@ -1746,6 +1746,8 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>CustomTabBarFontSize</key>
+	<real>15</real>
 	<key>Default Bookmark Guid</key>
 	<string>A620141D-783E-401B-8279-7F1711C47E60</string>
 	<key>EnableProxyIcon</key>
@@ -2982,6 +2984,8 @@
 	<true/>
 	<key>UseBorder</key>
 	<false/>
+	<key>UseCustomTabBarFontSize</key>
+	<true/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>

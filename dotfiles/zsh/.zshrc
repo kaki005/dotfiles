@@ -42,9 +42,10 @@ source $DOTFILES_DIR/dotfiles/.alias
 SCRIPT_DIR=$DOTFILES_DIR/dotfiles/zsh
 TOOL_DIR=$SCRIPT_DIR/tool
 source $SCRIPT_DIR/config.zsh
-source $SCRIPT_DIR/command.zsh
 source $SCRIPT_DIR/key-bind.zsh
 source $SCRIPT_DIR/plugin.zsh
+source $SCRIPT_DIR/command.zsh
+source $SCRIPT_DIR/set-tabcolor.zsh
 echo "zsh completed"
 
 dotfile_check
