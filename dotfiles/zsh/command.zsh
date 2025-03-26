@@ -1,6 +1,15 @@
 
 
+settitle() {
+  echo -ne "\033]0;$1\007"
+}
+
+
+
+
 chpwd() {
+  current_dir="$(pwd | rev | awk -F \/ '{print $1}'| rev)" # tab名をcurrentDirectoryに
+  settitle $current_dir
   if [[ $(ls | wc -l) -ge 10 ]]; then
     # print as grid
     eza -G -a -F --icons --group-directories-first --git --color=always --ignore-glob=".DS_Store|__*"
