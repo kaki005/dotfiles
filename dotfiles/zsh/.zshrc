@@ -50,5 +50,3 @@ echo "zsh completed"
 
 dotfile_check
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-source /Users/kakiosatsukokorozashi/.config/broot/launcher/bash/br

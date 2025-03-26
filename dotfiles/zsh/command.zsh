@@ -1,9 +1,4 @@
 
-
-settitle() {
-  echo -ne "\033]0;$1\007"
-}
-
 iterm_tab_index() {
   osascript -e '
   tell application "iTerm2"
@@ -34,7 +29,7 @@ tab_reset() {
 
 chpwd() {
   current_dir="$(pwd | rev | awk -F \/ '{print $1}'| rev)" # tab名をcurrentDirectoryに
-  settitle $current_dir
+  set_tabtitle $current_dir
   if [[ $(ls | wc -l) -ge 10 ]]; then
     # print as grid
     eza -G -a -F --icons --group-directories-first --git --color=always --ignore-glob=".DS_Store|__*"
