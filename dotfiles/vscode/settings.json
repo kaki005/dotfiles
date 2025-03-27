@@ -173,4 +173,7 @@
         "ngrams",
         "Pachinko"
     ],
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
 }

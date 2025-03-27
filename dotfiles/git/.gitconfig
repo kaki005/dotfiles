@@ -25,7 +25,7 @@
     quotepath=false # 日本語ファイル名をエンコードしない
     editor = nvim
     # You almost always want autocrlf=input unless you really know what you are doing.
-    autocrlf = input
+	autocrlf = true
 
 
 # color

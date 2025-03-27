@@ -12,3 +12,5 @@ New-Item -ItemType SymbolicLink -Path $HOME\AppData\Roaming\Code\User -Name keyb
 New-Item -ItemType SymbolicLink -Path $HOME\AppData\Roaming\Code\User -Name locale.json -Value $HOME\dotfiles\dotfiles\vscode\locale.json
 New-Item -ItemType SymbolicLink -Path $HOME\AppData\Roaming\Code\User -Name snippets -Value $HOME\dotfiles\dotfiles\vscode\snippets
 # New-Item -ItemType SymbolicLink -Path $HOME -Name .bashrc -Value $HOME\dotfiles\bash\.bashrc_win_git_bash
+
+New-Item -ItemType SymbolicLink -Path $env:USERPROFILE\.glzr -Name zebar -Value $HOME\dotfiles\dotfiles\windows\.glzr/zebar

@@ -1,0 +1,177 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+i {
+  padding: 0 4px;
+}
+
+body {
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+}
+
+html,
+body,
+#root {
+  height: 24px;
+}
+
+#root {
+  background: transparent;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(203 166 247 / 90%);
+  align-items: center;
+  height: 100%;
+  padding: 4px 0.5vw;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: #1e1e2edd;
+  border: 1px solid #1e1e2edd;
+  border-radius: 10px;
+  gap: 18px;
+  padding: 2px 12px;
+  height: 18px;
+  cursor: default;
+
+  &:hover {
+    border: 1px solid #89b4fa;
+  }
+}
+
+.logo {
+  color: #89b4fa;
+  margin-right: 12px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background: #313244;
+  color: #cdd6f4;
+  margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.focused,
+  &.displayed {
+    background: #cba6f7;
+    color: #1e1e2e;
+  }
+
+  &:hover {
+    background: #f5c2e7;
+    color: #1e1e2e;
+  }
+}
+
+.focused-window {
+  display: flex;
+  line-height: 1.5;
+  font-size: 10px;
+  align-items: center;
+  margin-left: 12px;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.sketchy-icon {
+  font-family: "sketchybar-app-font", sans-serif;
+  line-height: 1.5;
+  font-size: 1.3em;
+  margin-right: 0.3rem;
+}
+
+.date {
+  background: #1e1e2edd;
+  color: #fab387;
+  border: 1px solid #1e1e2edd;
+  border-radius: 10px;
+  padding: 2px 6px;
+  height: 18px;
+  cursor: default;
+
+  &:hover {
+    border: 1px solid #fab387;
+  }
+}
+
+.memory {
+  color: #74c7ec;
+}
+
+.media-container {
+  display: flex;
+  background: transparent;
+  max-width: 300px;
+  padding: 2px 6px;
+  height: 18px;
+}
+
+.media {
+  max-width: 100%;
+  line-height: 1.5;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.cpu {
+  color: #89b4fa;
+
+  .high-usage {
+    color: #f38ba8;
+  }
+}
+
+.disk {
+  color: #b4befe;
+}
+
+.battery {
+  position: relative;
+  color: #a6e3a1;
+
+  .charging-icon {
+    position: absolute;
+    font-size: 11px;
+    left: -13px;
+    top: 2px;
+  }
+}
