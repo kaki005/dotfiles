@@ -1,3 +1,6 @@
 [submodule "dotfiles/eza-themes"]
 	path = dotfiles/eza-themes
 	url = https://github.com/eza-community/eza-themes.git
+[submodule "dotfiles/mac/sketchybar-system-stats"]
+	path = dotfiles/mac/sketchybar-system-stats
+	url = https://github.com/joncrangle/sketchybar-system-stats.git

@@ -1,12 +1,10 @@
-local colors = require("colors")
+local colors = require 'colors'
 
 -- Equivalent to the --bar domain
-sbar.bar({
-	-- topmost = "window",
-	height = 44,
-	margin = 0,
-	color = 0x0000000,
-	y_offset = 0,
-	padding_right = 8,
-	padding_left = 8,
-})
+sbar.bar {
+  topmost = 'on',
+  height = 30,
+  color = colors.crust_alpha,
+  padding_right = 10,
+  padding_left = 10,
+}

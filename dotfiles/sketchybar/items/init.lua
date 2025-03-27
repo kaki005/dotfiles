@@ -1,7 +1,8 @@
-require("items.paw")
-require("items.menus")
-require("items.spaces")
--- require("items.front_app")
-require("items.calendar")
-require("items.widgets")
-require("items.media")
+require 'items.apple'
+require 'items.spaces'
+require 'items.front_app'
+require 'items.calendar'
+require 'items.media'
+require 'items.stats'
+-- require 'items.stats2'
+require 'items.volume'
