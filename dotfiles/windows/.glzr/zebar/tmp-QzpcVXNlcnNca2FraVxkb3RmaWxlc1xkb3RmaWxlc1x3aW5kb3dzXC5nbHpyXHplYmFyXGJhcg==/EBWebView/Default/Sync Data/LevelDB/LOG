@@ -1,2 +1,3 @@
-2025/03/28-00:41:59.405 4ecc Creating DB C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\Sync Data\LevelDB since it was missing.
-2025/03/28-00:41:59.412 4ecc Reusing MANIFEST C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/03/28-22:21:15.671 4a8 Reusing MANIFEST C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/03/28-22:21:15.671 4a8 Recovering log #3
+2025/03/28-22:21:15.672 4a8 Reusing old log C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\Sync Data\LevelDB/000003.log 

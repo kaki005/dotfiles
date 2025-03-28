@@ -11,3 +11,5 @@ source $BASH_ROOTDIR/export.bash
 echo ".bashrc load complated"
 
 dotfile_check
+
+source /Users/kakiosatsukokorozashi/.config/broot/launcher/bash/br

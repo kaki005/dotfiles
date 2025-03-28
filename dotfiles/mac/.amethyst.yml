@@ -1,0 +1,28 @@
+
+layouts:
+  - tall
+  - fullscreen
+  - bsp # Binary sapce partitioning
+window-margins: true
+
+
+# The integer percentage of the screen dimension to increment and decrement main pane ratios by (default 5).
+window-resize-step: 5
+
+# Padding to apply between windows and the left edge of the screen (in px, default 0).
+screen-padding-left: 5
+
+# Padding to apply between windows and the right edge of the screen (in px, default 0).
+screen-padding-right: 5
+
+# Padding to apply between windows and the top edge of the screen (in px, default 0).
+screen-padding-top: 30
+
+# Padding to apply between windows and the bottom edge of the screen (in px, default 0).
+screen-padding-bottom: 3
+
+# true to maintain layout state across application executions (default true).
+restore-layouts-on-launch: true
+
+# true to display some optional debug information in the layout HUD (default false).
+debug-layout-info: false

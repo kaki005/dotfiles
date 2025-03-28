@@ -7,3 +7,4 @@
   rye self update
   mise install
   mise upgrade
+  mas upgrade

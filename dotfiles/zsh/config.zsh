@@ -25,6 +25,9 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*:default' menu select=2
 
 
+
+
+
 #################################  OTHERS  #################################
 # automatically change directory when dir name is typed
 setopt auto_cd

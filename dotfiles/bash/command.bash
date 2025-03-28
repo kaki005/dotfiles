@@ -1,6 +1,7 @@
+
 cd() {
    builtin cd "$1"
-
+   set_title "$(pwd | rev | awk -F \/ '{print $1}'| rev)" # tab名をcurrentDirectoryに
    if [[ $(ls | wc -l) -ge 10 ]]; then
     # print as grid
     eza -G -a -F --icons --group-directories-first --git --color=always --ignore-glob=".DS_Store|__*"
@@ -12,6 +13,6 @@ cd() {
     git pull
   fi
   if [ -d  ".venv" ]; then # python環境なら
-    rye sync
+    uv sync
   fi
 }

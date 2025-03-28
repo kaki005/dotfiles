@@ -29,7 +29,7 @@ if [ -d "/Applications/iTerm.app" ]; then
 fi
 
 # macなら
-if [ "$(uname)" = "Darwin" ]; then 
+if [ "$(uname)" = "Darwin" ]; then
     __ln ~/dotfiles/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
     __ln ~/dotfiles/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
     __ln ~/dotfiles/dotfiles/vscode/locale.json ~/Library/Application\ Support/Code/User/locale.json

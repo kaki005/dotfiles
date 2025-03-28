@@ -1,2 +1,3 @@
-2025/03/28-00:41:59.428 39e4 Creating DB C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\shared_proto_db\metadata since it was missing.
-2025/03/28-00:41:59.434 39e4 Reusing MANIFEST C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2025/03/28-22:21:15.693 12e4 Reusing MANIFEST C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2025/03/28-22:21:15.694 12e4 Recovering log #3
+2025/03/28-22:21:15.694 12e4 Reusing old log C:\Users\kaki\.glzr\zebar\tmp-QzpcVXNlcnNca2FraVxkb3RmaWxlc1xkb3RmaWxlc1x3aW5kb3dzXC5nbHpyXHplYmFyXGJhcg==\EBWebView\Default\shared_proto_db\metadata/000003.log 
