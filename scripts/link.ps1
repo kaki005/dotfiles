@@ -12,3 +12,12 @@ New-Item -ItemType SymbolicLink -Path $HOME\AppData\Roaming\Code\User -Name keyb
 New-Item -ItemType SymbolicLink -Path $HOME\AppData\Roaming\Code\User -Name locale.json -Value $HOME\dotfiles\dotfiles\vscode\locale.json
 New-Item -ItemType SymbolicLink -Path $HOME\AppData\Roaming\Code\User -Name snippets -Value $HOME\dotfiles\dotfiles\vscode\snippets
 # New-Item -ItemType SymbolicLink -Path $HOME -Name .bashrc -Value $HOME\dotfiles\bash\.bashrc_win_git_bash
+
+
+# komorebi
+$FolderPath = "$HOME\.config"  # 作成したいフォルダのパスを指定
+if (!(Test-Path -Path $FolderPath)) {
+    New-Item -ItemType Directory -Path $FolderPath
+    Write-Host "フォルダを作成しました: $FolderPath"
+}
+New-Item -ItemType SymbolicLink -Path $FolderPath -Name komorebi -Value $HOME\dotfiles\dotfiles\windows\komorebi
