@@ -1,2 +1,3 @@
 # 配下の.DS_Storeと._xxx を削除
-find . \( -name '.DS_Store' -or -name '._*' \) -delete -print;
+find . \( -name '.DS_Store' -or -name '._*'  \) -delete -print;
+find ./ -type f -name '*:Zone.Identifier' -exec rm {} \;
