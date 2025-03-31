@@ -34,13 +34,13 @@ for i = 1, 10, 1 do
   space:subscribe('space_change', function(env)
     if env.SELECTED == 'true' then
       space:set {
-        icon = { string = '' .. ' ' .. i, color = colors.crust },
+        icon = { string = i, color = colors.crust },
         label = { color = colors.crust },
         background = { color = colors.mauve }
       }
     else
       space:set {
-        icon = { string = '' .. ' ' .. i, color = colors.text },
+        icon = { string = i, color = colors.text },
         label = { color = colors.text },
         background = { color = colors.surface0 },
       }

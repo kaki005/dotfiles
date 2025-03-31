@@ -49,7 +49,7 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
     "editor.dragAndDrop": false,
-    "editor.fontFamily": "'Moralerspace Neon HWNF', Consolas, 'Courier New', monospace,'FiraCode Nerd Font Mono'",
+    "editor.fontFamily": "'Moralerspace Neon HWNF', Consolas, 'Courier New', monospace,'FiraCode Nerd Font Mono', 'sketchybar-app-font', '0xProtoNerdFont-Regular'",
     "editor.guides.bracketPairs": true,
     "editor.minimap.maxColumn": 8100,
     "editor.minimap.showSlider": "always",

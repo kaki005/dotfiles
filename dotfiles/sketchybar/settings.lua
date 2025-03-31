@@ -1,8 +1,8 @@
 return {
   paddings = 6,
   font = {
-    text = 'LiterationMono Nerd Font',
-    numbers = 'LiterationMono Nerd Font',
+    text = '0xProto Nerd Font',
+    numbers = '0xProto Nerd Font',
     style_map = {
       ['Regular'] = 'Regular',
       ['Semibold'] = 'Regular',
