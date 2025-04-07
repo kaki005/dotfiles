@@ -18,10 +18,22 @@ local apple_logo = sbar.add('item', 'apple_logo', {
 local apple_prefs = sbar.add('item', 'apple_prefs', {
 	position = 'popup.' .. apple_logo.name,
 	icon = '􀺽',
-	label = 'System Settings',
+	label = 'Preferences',
 })
 
 apple_prefs:subscribe('mouse.clicked', function(_)
 	sbar.exec("open -a 'System Preferences'")
+	apple_logo:set({ popup = { drawing = false } })
+end)
+
+
+local lock_screen = sbar.add('item', 'lock_screen', {
+	position = 'popup.' .. apple_logo.name,
+	icon = '􀒳',
+	label = 'lock screen',
+})
+
+lock_screen:subscribe('mouse.clicked', function(_)
+	sbar.exec("pmset displaysleepnow")
 	apple_logo:set({ popup = { drawing = false } })
 end)
