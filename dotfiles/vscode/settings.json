@@ -129,14 +129,14 @@
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
     },
-    "workbench.colorCustomizations": {
-        "editorBracketHighlight.foreground1": "#d06293", //pink
-        "editorBracketHighlight.foreground2": "#f3cb76", //yellow
-        "editorBracketHighlight.foreground3": "#5081eb", //blue
-        "editorBracketHighlight.foreground4": "#5be7a1", //green
-        "editorBracketHighlight.foreground5": "#a908f3", //purple
-        "editorBracketHighlight.foreground6": "#e1510e", //orange
-    },
+    // "workbench.colorCustomizations": {
+    //     "editorBracketHighlight.foreground1": "#d06293", //pink
+    //     "editorBracketHighlight.foreground2": "#f3cb76", //yellow
+    //     "editorBracketHighlight.foreground3": "#5081eb", //blue
+    //     "editorBracketHighlight.foreground4": "#5be7a1", //green
+    //     "editorBracketHighlight.foreground5": "#a908f3", //purple
+    //     "editorBracketHighlight.foreground6": "#e1510e", //orange
+    // },
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "catppuccin-mocha", //ファイルアイコンテーマ
@@ -188,4 +188,33 @@
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ],
+    "custom-ui-style.electron": {
+        "backgroundColor": "rgba(40, 42, 54, 0.8)", // Set this to desired bg color
+        "frame": false,
+        "transparent": true,
+        "titleBarStyle": "hiddenInset",
+        "vibrancy": "ultra-dark",
+        "opacity": 0.93, // Range: 0-1 (To go fully transparent, set it to 0)
+        "visualEffectState": "active"
+    },
+    "workbench.colorCustomizations": {
+        "editorGroupHeader.tabsBackground": "#00000000",
+        "sideBar.background": "#00000000",
+        "sideBarSectionHeader.background": "#00000000",
+        "editor.background": "#00000000",
+        "peekViewEditor.background": "#00000000",
+        "peekViewEditorGutter.background": "#00000000",
+        "peekViewTitle.background": "#00000000",
+        "peekViewResult.background": "#00000000",
+        "tab.activeBackground": "#00000000",
+        "tab.inactiveBackground": "#00000000",
+        "statusBar.background": "#00000000",
+        "statusBar.debuggingBackground": "#00000000",
+        "statusBar.noFolderBackground": "#00000000",
+        "statusBarItem.activeBackground": "#00000000",
+        "panel.background": "#00000000",
+        "activityBar.background": "#00000000",
+        "terminal.background": "#00000000"
+    },
+    "editor.minimap.autohide": true,
 }
