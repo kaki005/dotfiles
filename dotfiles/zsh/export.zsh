@@ -20,6 +20,7 @@ export MPLCONFIGDIR="$HOME/.cache/matplotlib" # matplotlibのフォントファ�
 export KERAS_HOME="$HOME/.cache/keras" # kerasのHome
 export GOPATH="$HOME/.local/share/go"
 export ZDOTDIR="$HOME/.cache/zsh" # .zcompdumpの置き場所
+export MYSQL_HISTFILE="$HOME/.cache/.mysql_history"
 #export TLDR_HOME="$HOME/.cache/tldrc" # tldrの置き場
 
 # ****************** C /C++ ********************

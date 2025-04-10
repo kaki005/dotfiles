@@ -23,6 +23,7 @@ brew "httpie"
 brew "lua"
 brew "mas"
 brew "mise"
+brew "mycli"
 brew "nano"# replace default package
 brew "neofetch"
 brew "neovim"

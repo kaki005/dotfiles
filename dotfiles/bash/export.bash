@@ -12,7 +12,7 @@ export RYE_HOME="$HOME/.cache/rye"
 export NVM_DIR="$HOME/.cache/nvm"
 export GOPATH="$HOME/.local/share/go"
 export ZDOTDIR="$HOME/.cache/zsh" # .zcompdumpの置き場所
-
+export MYSQL_HISTFILE="$HOME/.cache/.mysql_history"
 export PAGER=less
 export MANPAGER='nvim +Man!'
 export LESSHISTFILE="$HOME/.cache/.lesshist"
