@@ -38,8 +38,6 @@ alias grep="rg"
 alias dcom='docker-compose'
 alias dk='docker'
 alias finder='open .'
-
-alias metabase="java --add-opens java.base/java.nio=ALL-UNNAMED -jar ~/.local/bin/Metabase.jar"
 alias k='kubectl'
 alias kgp='k get pods'
 alias kgd='k get deployment'
