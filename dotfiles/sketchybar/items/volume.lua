@@ -3,7 +3,7 @@ local settings = require 'settings'
 
 -- Volume slider
 local volume_slider = sbar.add('slider', 'volume_slider', 100, {
-	position = 'right',
+	position = 'center',
 	updates = true,
 	label = { drawing = false },
 	icon = { drawing = false },
@@ -22,19 +22,9 @@ local volume_slider = sbar.add('slider', 'volume_slider', 100, {
 	},
 })
 
-local volume_percent = sbar.add('item', 'volume_percent', {
-	position = 'right',
-	icon = { drawing = false },
-	label = {
-		string = '??%',
-		font = { family = settings.font.text, style = settings.font.style_map['Bold'], size = 14.0 },
-		color = colors.blue,
-	},
-	background = { padding_left = 0, padding_right = 10 },
-})
 
 local volume_icon = sbar.add('item', 'volume_icon', {
-	position = 'right',
+	position = 'center',
 	icon = {
 		string = '􀊩',
 		width = 0,
@@ -56,6 +46,16 @@ local volume_icon = sbar.add('item', 'volume_icon', {
 		padding_right = 0,
 	},
 	background = { padding_left = 10, padding_right = 0 },
+})
+local volume_percent = sbar.add('item', 'volume_percent', {
+	position = 'center',
+	icon = { drawing = false },
+	label = {
+		string = '??%',
+		font = { family = settings.font.text, style = settings.font.style_map['Bold'], size = 14.0 },
+		color = colors.blue,
+	},
+	background = { padding_left = 0, padding_right = 10 },
 })
 
 volume_slider:subscribe('mouse.clicked', function(env)

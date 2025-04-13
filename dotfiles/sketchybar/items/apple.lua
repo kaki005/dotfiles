@@ -37,3 +37,26 @@ lock_screen:subscribe('mouse.clicked', function(_)
 	sbar.exec("pmset displaysleepnow")
 	apple_logo:set({ popup = { drawing = false } })
 end)
+
+
+local shutdown = sbar.add('item', 'shutdown', {
+	position = 'popup.' .. apple_logo.name,
+	icon = '',
+	label = 'shut down',
+})
+
+shutdown:subscribe('mouse.clicked', function(_)
+	sbar.exec("pmset shutdown")
+	apple_logo:set({ popup = { drawing = false } })
+end)
+
+local restart = sbar.add('item', 'restart', {
+	position = 'popup.' .. apple_logo.name,
+	icon = '',
+	label = 'restart',
+})
+
+restart:subscribe('mouse.clicked', function(_)
+	sbar.exec("pmset shutdown -r")
+	apple_logo:set({ popup = { drawing = false } })
+end)

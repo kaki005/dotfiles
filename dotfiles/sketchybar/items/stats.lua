@@ -11,7 +11,7 @@ local items = {
 	{ name = 'disk_usage', icon = '󰋊', env = 'DISK_USAGE' },
 	-- { name = 'ram_usage', icon = '', env = 'RAM_USAGE' },
 	{ name = 'cpu_usage', icon = '󰠷', env = 'CPU_USAGE' },
-		{ name = 'network_tx', icon = '󰖩', env = 'NETWORK_TX_en0' },
+	{ name = 'network_tx', icon = '󰖩', env = 'NETWORK_TX_en0' },
 	{ name = 'network_rx', icon = '󰖩', env = 'NETWORK_RX_en0' },
 }
 
@@ -22,7 +22,7 @@ for _, item in ipairs(items) do
 	local item_env = item.env
 
 	local created_item = sbar.add('item', item_name, {
-		position = 'right',
+		position = 'center',
 		icon = {
 			string = item.icon,
 			font = { family = settings.font.numbers, style = settings.font.style_map['Bold'], size = 14.0 },
