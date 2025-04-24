@@ -77,8 +77,9 @@
         "**/.ruff_cache": true,
         "**/.venv": true,
         "**/plot": true,
-        "**.log": true,
-        "**.npy": true,
+        "**/**.log": true,
+        "**/**.npy": true,
+        "**/**.eqx": true,
         "outputs": true,
         "build": true,
         "**/.mypy_cache": true,
@@ -194,7 +195,7 @@
         "transparent": true,
         "titleBarStyle": "hiddenInset",
         "vibrancy": "ultra-dark",
-        "opacity": 0.93, // Range: 0-1 (To go fully transparent, set it to 0)
+        "opacity": 0.92, // Range: 0-1 (To go fully transparent, set it to 0)
         "visualEffectState": "active"
     },
     "workbench.colorCustomizations": {
