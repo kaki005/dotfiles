@@ -51,3 +51,4 @@ autoload -Uz cd-gitroot
 
 eval "$(mise activate zsh)"
 eval "$(zoxide init zsh)"
+eval "$(/usr/libexec/path_helper)"

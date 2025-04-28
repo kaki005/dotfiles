@@ -21,3 +21,4 @@ source $DOTFILES_DIR/dotfiles/zsh/tool/git-prompt.sh
 eval "$(zoxide init bash)" # zoxyide
 eval "$(starship init bash)" # starshp
 eval "$(mise activate bash)" # mise
+eval "$(/usr/libexec/path_helper)" # latex

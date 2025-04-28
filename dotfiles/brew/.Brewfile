@@ -60,6 +60,7 @@ cask "raycast"
 cask "skype"
 cask "slack"
 cask "alt-tab"
+cask "mactex"
 cask "visual-studio-code"
 # Fonts
 cask "sf-symbols"
