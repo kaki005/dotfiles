@@ -1,22 +1,23 @@
 [tools]
 haskell = "9.12.1"
 python = ["latest", "3.10", "3.12", "3.13.1t"]
-java = "latest"
+java = "openjdk-17"
 go = "latest"
 node = "lts"
 terraform = "latest"
-uv="latest"
-npm="latest"
+uv = "latest"
+npm = "latest"
 rust = "latest"
-clojure="latest"
+clojure = "latest"
 julia = "latest"
 [settings]
 experimental = true
 verbose = false
+idiomatic_version_file_enable_tools = ["python"]
 
 [settings.status]
 show_env = true
 show_tools = true
 
 [alias]
-julia ="https://github.com/mise-plugins/mise-julia"
+julia = "https://github.com/mise-plugins/mise-julia"

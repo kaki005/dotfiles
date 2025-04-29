@@ -1,3 +1,4 @@
+
 export LESSHISTFILE="$HOME/.cache/.lesshist"
 export LESS="-i -q -x2 -N -R"
 export LESSCHARSET="utf-8"

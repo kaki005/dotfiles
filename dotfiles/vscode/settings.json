@@ -80,6 +80,7 @@
         "**/**.log": true,
         "**/**.npy": true,
         "**/**.eqx": true,
+        "**/**.h5": true,
         "outputs": true,
         "build": true,
         "**/.mypy_cache": true,
