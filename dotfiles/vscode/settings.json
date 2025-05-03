@@ -75,9 +75,10 @@
     "files.exclude": { // 非表示ファイル
         "**/__pycache__": true,
         "**/.ruff_cache": true,
-        "**/.venv": true,
+        ".venv": true,
         "**/plot": true,
         "**/**.log": true,
+        "**/**.gitkeep": true,
         "**/**.npy": true,
         "**/**.eqx": true,
         "**/**.h5": true,
@@ -219,4 +220,5 @@
         "terminal.background": "#00000000"
     },
     "editor.minimap.autohide": true,
+    "window.commandCenter": false,
 }

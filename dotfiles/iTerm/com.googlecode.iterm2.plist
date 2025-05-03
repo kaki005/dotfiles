@@ -1779,7 +1779,7 @@
 	<key>HotkeyModifiers</key>
 	<integer>524288</integer>
 	<key>LeftTabBarWidth</key>
-	<real>218</real>
+	<real>246</real>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2985,7 +2985,7 @@
 	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
