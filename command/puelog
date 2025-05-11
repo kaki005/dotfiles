@@ -1,0 +1,1 @@
+less $HOME/.local/share/pueue/task_logs/$1.log
