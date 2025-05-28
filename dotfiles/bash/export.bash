@@ -18,7 +18,7 @@ export MANPAGER='nvim +Man!'
 export LESSHISTFILE="$HOME/.cache/.lesshist"
 export LESS="-i -q -x2 -N -R"
 export LESSCHARSET="utf-8"
-export LESSOPEN="| highlight %s"
+# export LESSOPEN="| highlight %s"
 
 if uname -r | grep -qi microsoft; then
     export WINHOME="/mnt/c/Users/$(wslvar USERNAME)"

@@ -2,7 +2,7 @@
 export LESSHISTFILE="$HOME/.cache/.lesshist"
 export LESS="-i -q -x2 -N -R"
 export LESSCHARSET="utf-8"
-export LESSOPEN="| highlight %s"
+# export LESSOPEN="| highlight %s"
 export HISTSIZE=100000             # メモリ上に保存する履歴のサイズ
 export SAVEHIST=1000000            # 上述のファイルに保存する履歴のサイズ
 
