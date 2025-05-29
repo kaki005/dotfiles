@@ -133,14 +133,6 @@
         "**/index.*": "${dirname} .../${dirname(1)}",
         "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}",
     },
-    // "workbench.colorCustomizations": {
-    //     "editorBracketHighlight.foreground1": "#d06293", //pink
-    //     "editorBracketHighlight.foreground2": "#f3cb76", //yellow
-    //     "editorBracketHighlight.foreground3": "#5081eb", //blue
-    //     "editorBracketHighlight.foreground4": "#5be7a1", //green
-    //     "editorBracketHighlight.foreground5": "#a908f3", //purple
-    //     "editorBracketHighlight.foreground6": "#e1510e", //orange
-    // },
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "catppuccin-mocha", //ファイルアイコンテーマ
