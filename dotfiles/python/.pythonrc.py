@@ -1,7 +1,9 @@
 # this file is executed on starting console python.
+import logging
 import readline, rlcompleter
 readline.parse_and_bind("tab: complete")
 readline.write_history_file = lambda *args: None # disable python history
+logger = logging.getLogger()
 # pprint
 import sys, pprint
 def my_displayhook(value):
