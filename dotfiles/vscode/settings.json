@@ -93,7 +93,7 @@
         "**/**.zip": true,
         "**/**.gz": true,
         "**/**.csv.gz": true,
-        "**/uv.lock": true,
+        // "**/uv.lock": true,
     },
     "files.eol": "\n", // 改行記号
     "files.candidateGuessEncodings": [

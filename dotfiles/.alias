@@ -19,7 +19,8 @@
 alias sc='screen'
 alias ..='cd ../'
 alias ...='cd ../../'
-alias ps='procs --tree'
+alias newps='procs --tree'
+alias psa='ps -u $(whoami)'
 alias cd='z'
 alias du="dust"
 # alias df="duf"
