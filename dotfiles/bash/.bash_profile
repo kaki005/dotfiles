@@ -38,3 +38,5 @@ if [ -f /etc/profile.d/alias ]; then
 fi
 
 source /Users/kakiosatsukokorozashi/.config/broot/launcher/bash/br
+export PATH="/opt/home/kakinotane1456/homebrew/bin:$PATH"
+export PATH="/opt/home/kakinotane1456/homebrew/sbin:$PATH"
