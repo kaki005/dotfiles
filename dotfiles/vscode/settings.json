@@ -11,7 +11,7 @@
     },
     "python.languageServer": "Pylance",
     "autoDocstring.docstringFormat": "google",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
     "python.venvPath": "${workspaceFolder}/.venv",
     "python.analysis.extraPaths": [
         "./"
@@ -76,7 +76,7 @@
         "**/__pycache__": true,
         "**/.ruff_cache": true,
         ".venv": true,
-        "**/plot": true,
+        // "**/plot": true,
         "**/**.log": true,
         "**/**.gitkeep": true,
         "**/**.npy": true,
@@ -214,4 +214,5 @@
     },
     "editor.minimap.autohide": true,
     "window.commandCenter": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
 }
