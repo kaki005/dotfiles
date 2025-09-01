@@ -212,7 +212,8 @@
         "activityBar.background": "#00000000",
         "terminal.background": "#00000000"
     },
-    "editor.minimap.autohide": true,
+    "editor.minimap.autohide": "mouseover",
     "window.commandCenter": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "livePreview.notifyOnOpenLooseFile": false,
 }
