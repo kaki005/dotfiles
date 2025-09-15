@@ -36,11 +36,13 @@ octave/.octaverc        ${HOME}/.octaverc
 # eza
 eza-themes/themes/catppuccin.yml  ${HOME}/.config/eza/theme.yml
 
-# editorconfig
 .editorconfig     ${HOME}/.editorconfig
 
-# cava
 cava               ${HOME}/.config/cava
 
 visidata/plugins            ${HOME}/.visidata/plugins
 visidata/.visidatarc        ${HOME}/.visidatarc
+
+mycli/.myclirc              ${HOME}/.myclirc
+
+aspell/.aspell.en.pws       ${HOME}/.aspell.en.pws
