@@ -46,8 +46,8 @@ alias targz="tar -zcvf"
 alias untargz="tar -zxvf"
 alias comptar="tar -cvf"
 alias untar="tar -xvf"
-alais targz2="tar -jcvf"
-alais untargz2="tar -jxvf"
+alias targz2="tar -jcvf"
+alias untargz2="tar -jxvf"
 # kubernetes
 alias k='kubectl'
 alias kgp='k get pods'
