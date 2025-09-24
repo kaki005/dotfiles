@@ -92,7 +92,8 @@
         "**/**.dill": true,
         "**/**.zip": true,
         "**/**.gz": true,
-        "**/**.csv.gz": true,
+        "**/**.csv.gz": false,
+        "**/**.jsonl.gz": false,
         // "**/uv.lock": true,
     },
     "files.eol": "\n", // 改行記号
