@@ -11,7 +11,7 @@
     },
     "python.languageServer": "Pylance",
     "autoDocstring.docstringFormat": "google",
-    "python.defaultInterpreterPath": "/Users/kakiosatsukokorozashi/.local/share/mise/installs/python/3.13.7/bin/python",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
     "python.venvPath": "${workspaceFolder}/.venv",
     "python.analysis.extraPaths": [
         "./"

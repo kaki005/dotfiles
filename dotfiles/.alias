@@ -16,9 +16,12 @@
 #    $ declare -f <関数名>
 #
 #*******************************************************************************
+alias searchJapanese="grep -r --color=auto -P '[\x{3040}-\x{30FF}\x{4E00}-\x{9FFF}]'"
 alias sc='screen'
 alias ..='cd ../'
 alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
 alias newps='procs --tree'
 alias psa='ps -u $(whoami)'
 alias cd='z'
