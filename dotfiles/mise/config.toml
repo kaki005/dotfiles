@@ -19,5 +19,5 @@ idiomatic_version_file_enable_tools = ["python"]
 show_env = true
 show_tools = true
 
-[alias]
+[tool_alias]
 julia = "https://github.com/mise-plugins/mise-julia"
