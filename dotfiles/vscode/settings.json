@@ -217,4 +217,5 @@
     "window.commandCenter": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "livePreview.notifyOnOpenLooseFile": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }
