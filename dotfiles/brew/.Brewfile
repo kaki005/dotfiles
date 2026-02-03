@@ -79,6 +79,7 @@ cask "mactex"
 cask "visual-studio-code"
 # Fonts
 brew "font-noto-sans-cjk-jp"
+cask "default-folder-x"
 cask "font-sf-mono"
 cask "font-sf-pro"
 cask "font-computer-modern"
