@@ -139,6 +139,8 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 # ============
 # Avoid creating `.DS_Store` files on network volumes （ネットワークディスクで、`.DS_Store` ファイルを作らない）
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+#USB上への.DS_Storeファイルの作成抑制
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Hide the battery percentage from the menu bar （バッテリーのパーセントを非表示にする）
 defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 # Date options: Show the day of the week: on （日付表示設定、曜日を表示）

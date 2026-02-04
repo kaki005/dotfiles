@@ -2967,6 +2967,8 @@
 	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
+	<key>OpenFileInNewWindows</key>
+	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
 	<key>PMPrintingPanelSize</key>
