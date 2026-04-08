@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "FelixKratz/formulae"
 tap "wtsnjp/tex2img"
 brew "aria2"
