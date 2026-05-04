@@ -9,3 +9,4 @@
   mas upgrade
   # visidata のplugin
   $(head -n 1 $(which vd) | cut -c3-) -m pip install pyarrow
+  softwareupdate -i -a
