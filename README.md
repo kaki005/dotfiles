@@ -4,6 +4,7 @@
 ## Usage
 ### linux,macの場合
 ```
+xcode-select --install
 git clone https://github.com/kaki005/dotfiles.git
 dotfiles/scripts/link.sh
 dotfiles/scripts/install.sh
