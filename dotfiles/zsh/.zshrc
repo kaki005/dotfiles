@@ -46,7 +46,7 @@ source $SCRIPT_DIR/key-bind.zsh
 source $SCRIPT_DIR/plugin.zsh
 source $SCRIPT_DIR/command.zsh
 source $SCRIPT_DIR/set-tabcolor.zsh
-echo "zsh completed"
+log_success "zsh completed"
 
 dotfile_check
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

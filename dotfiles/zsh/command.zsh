@@ -25,8 +25,6 @@ tab_reset() {
 
 
 
-
-
 chpwd() {
   current_dir="$(pwd | rev | awk -F \/ '{print $1}'| rev)" # tab名をcurrentDirectoryに
   set_tabtitle $current_dir

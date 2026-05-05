@@ -1,12 +1,20 @@
-  # 一括でupdate, upgradeを行います。
+  log_info "update git repository"
   ghq list | ghq get --update --parallel
   git -C ~/dotfiles pull
+
+  log_info "update brew"
   brew bundle --global # install new package from ~/.Brewfile
   brew update
   brew upgrade
+
+  log_info "update mise"
   mise install
   mise upgrade
+
+  log_info "update mas"
   mas upgrade
   # visidata のplugin
   $(head -n 1 $(which vd) | cut -c3-) -m pip install pyarrow
+  log_info "update os"
   softwareupdate -i -a
+log_success "update completed!"

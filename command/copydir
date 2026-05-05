@@ -1,1 +1,2 @@
 pwd | tr -d "\r\n" | pbcopy
+log_success "copied!"

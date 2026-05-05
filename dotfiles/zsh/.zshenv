@@ -24,4 +24,4 @@ fi
 
 
 
-echo ".zshenv loaded"
+log_success ".zshenv loaded"
