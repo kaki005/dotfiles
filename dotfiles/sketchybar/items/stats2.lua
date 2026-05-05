@@ -2,7 +2,7 @@ local colors = require 'colors'
 local settings = require 'settings'
 
 sbar.exec(
-	'killall stats_provider >/dev/null; $HOME/.local/share/sketchybar-system-stats/target/release/stats_provider -a')
+	'killall stats_provider >/dev/null; stats_provider -a')
 
 local items = {
 	-- { name = 'arch', icon = '', env = 'ARCH' },
