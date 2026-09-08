@@ -5,7 +5,7 @@
   log_info "update brew"
   brew bundle --global # install new package from ~/.Brewfile
   brew update
-  brew upgrade
+  brew upgrade --yes
 
   log_info "update mise"
   mise install
