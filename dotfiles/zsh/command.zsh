@@ -24,8 +24,14 @@ tab_reset() {
 }
 
 
+# AIエージェント(Claude Code など)から起動されたシェルかどうか
+# Claude Code は CLAUDECODE=1、汎用の規約として AI_AGENT を設定する
+is_agent() {
+  [[ -n "$CLAUDECODE" || -n "$AI_AGENT" ]]
+}
 
 chpwd() {
+  is_agent && return # エージェントの cd では表示・git pull・uv sync をしない
   current_dir="$(pwd | rev | awk -F \/ '{print $1}'| rev)" # tab名をcurrentDirectoryに
   set_tabtitle $current_dir
   if [[ $(ls | wc -l) -ge 10 ]]; then

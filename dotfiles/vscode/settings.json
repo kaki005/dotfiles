@@ -218,4 +218,5 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "livePreview.notifyOnOpenLooseFile": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "claudeCode.preferredLocation": "panel",
 }
