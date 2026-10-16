@@ -220,4 +220,10 @@
     "livePreview.notifyOnOpenLooseFile": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "claudeCode.preferredLocation": "panel",
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.logLevel": "trace",
+    "remote.SSH.remotePlatform": {
+        "akebono": "linux"
+    }
 }
