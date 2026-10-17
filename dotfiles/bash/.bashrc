@@ -43,3 +43,4 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+export PATH="$HOME/.local/bin:$PATH"
