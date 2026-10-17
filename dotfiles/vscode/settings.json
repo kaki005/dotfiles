@@ -238,6 +238,7 @@
     "remote.SSH.useLocalServer": false,
     "remote.SSH.logLevel": "trace",
     "remote.SSH.remotePlatform": {
-        "akebono": "linux"
+        "akebono": "linux",
+        "ayame": "linux"
     }
 }
