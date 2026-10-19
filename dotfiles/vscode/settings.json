@@ -240,5 +240,6 @@
     "remote.SSH.remotePlatform": {
         "akebono": "linux",
         "ayame": "linux"
-    }
+    },
+    "chat.viewSessions.orientation": "stacked"
 }
